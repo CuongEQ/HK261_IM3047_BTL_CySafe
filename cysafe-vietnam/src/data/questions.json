@@ -1,0 +1,177 @@
+{
+  "quizTitle": "Kiểm Tra Chỉ Số An Toàn Số (Cyber Safety Index - CSI)",
+  "quizDescription": "Đánh giá toàn diện khả năng nhận thức và phòng vệ của bạn trên môi trường số qua 15 câu hỏi tình huống thực tế.",
+  "pillars": [
+    { "id": "password", "name": "Bảo mật Mật khẩu", "icon": "🔑", "color": "#06B6D4" },
+    { "id": "phishing", "name": "Nhận diện Lừa đảo", "icon": "🎣", "color": "#F43F5E" },
+    { "id": "privacy", "name": "Quyền riêng tư & Dữ liệu", "icon": "🛡️", "color": "#10B981" },
+    { "id": "incident", "name": "Ứng phó Sự cố", "icon": "🚨", "color": "#F59E0B" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "pillar": "password",
+      "question": "Bạn nhận được email từ ngân hàng yêu cầu 'xác minh tài khoản' bằng cách bấm vào link và nhập mật khẩu Internet Banking. Bạn sẽ làm gì?",
+      "options": [
+        { "text": "Bấm vào link và nhập thông tin ngay vì sợ bị khóa tài khoản", "score": 0 },
+        { "text": "Kiểm tra địa chỉ email gửi, nếu đúng tên ngân hàng thì nhập", "score": 3 },
+        { "text": "Bỏ qua email, mở trực tiếp app/website ngân hàng để kiểm tra", "score": 8 },
+        { "text": "Bỏ qua email, gọi hotline ngân hàng (số in trên thẻ ATM) để hỏi, đồng thời báo cáo email lừa đảo", "score": 10 }
+      ]
+    },
+    {
+      "id": 2,
+      "pillar": "password",
+      "question": "Bạn đang dùng mật khẩu nào cho tài khoản ngân hàng online?",
+      "options": [
+        { "text": "Ngày sinh + tên (vd: 15011990nam)", "score": 0 },
+        { "text": "Một mật khẩu phức tạp, dùng chung cho nhiều tài khoản", "score": 3 },
+        { "text": "Mật khẩu riêng biệt, kết hợp chữ hoa, thường, số và ký tự đặc biệt", "score": 7 },
+        { "text": "Mật khẩu riêng biệt, quản lý bằng ứng dụng quản lý mật khẩu, kèm xác thực 2 lớp (2FA)", "score": 10 }
+      ]
+    },
+    {
+      "id": 3,
+      "pillar": "phishing",
+      "question": "Bạn nhận tin nhắn SMS từ 'Vietcombank' thông báo tài khoản bị khóa, kèm link vcb-ebanking.xyz để mở khóa. Bạn nhận ra điều gì?",
+      "options": [
+        { "text": "Đây là tin nhắn từ Vietcombank, cần mở link ngay", "score": 0 },
+        { "text": "Hơi nghi ngờ nhưng vẫn bấm link xem thử", "score": 2 },
+        { "text": "Nhận ra tên miền .xyz không phải của VCB (.com.vn), đây là lừa đảo", "score": 8 },
+        { "text": "Nhận ra lừa đảo, xóa tin nhắn, chặn số, báo cáo qua tổng đài 156 hoặc app chongluadao.vn", "score": 10 }
+      ]
+    },
+    {
+      "id": 4,
+      "pillar": "phishing",
+      "question": "Bạn bè trên Facebook gửi tin nhắn: 'Vote giúp mình cuộc thi ảnh nha, bấm link này'. Link dẫn đến trang yêu cầu đăng nhập lại Facebook. Bạn sẽ?",
+      "options": [
+        { "text": "Đăng nhập ngay để giúp bạn", "score": 0 },
+        { "text": "Đăng nhập nhưng dùng mật khẩu cũ/khác để thử", "score": 2 },
+        { "text": "Kiểm tra URL trang web, thấy không phải facebook.com nên không đăng nhập", "score": 8 },
+        { "text": "Không đăng nhập, gọi điện/nhắn tin trực tiếp hỏi bạn qua kênh khác, vì tài khoản bạn có thể đã bị hack", "score": 10 }
+      ]
+    },
+    {
+      "id": 5,
+      "pillar": "phishing",
+      "question": "Bạn nhận cuộc gọi video Zalo từ 'con trai' đang du học, khuôn mặt và giọng rất giống, nói bị tai nạn cần chuyển gấp 50 triệu. Bạn phản ứng thế nào?",
+      "options": [
+        { "text": "Chuyển tiền ngay vì thấy rõ mặt con", "score": 0 },
+        { "text": "Hỏi thêm chi tiết nhưng vẫn lo lắng và sẵn sàng chuyển", "score": 3 },
+        { "text": "Tắt máy, gọi lại cho con bằng số điện thoại đã lưu sẵn", "score": 8 },
+        { "text": "Nghi ngờ Deepfake, hỏi 'mật khẩu gia đình' đã thống nhất trước, tắt máy gọi lại số cũ để xác minh", "score": 10 }
+      ]
+    },
+    {
+      "id": 6,
+      "pillar": "privacy",
+      "question": "Một ứng dụng chỉnh ảnh miễn phí yêu cầu quyền truy cập danh bạ, tin nhắn SMS, và vị trí. Bạn sẽ?",
+      "options": [
+        { "text": "Cho phép tất cả để dùng app nhanh", "score": 0 },
+        { "text": "Cho phép vì app nào cũng yêu cầu vậy", "score": 2 },
+        { "text": "Từ chối quyền không cần thiết (danh bạ, SMS), chỉ cho phép truy cập ảnh", "score": 8 },
+        { "text": "Từ chối toàn bộ, tìm app thay thế từ nhà phát triển uy tín, kiểm tra đánh giá trước khi cài", "score": 10 }
+      ]
+    },
+    {
+      "id": 7,
+      "pillar": "privacy",
+      "question": "Bạn kết nối WiFi miễn phí tại quán cà phê. Bạn có thực hiện giao dịch ngân hàng trên WiFi này không?",
+      "options": [
+        { "text": "Có, WiFi miễn phí tiện lợi", "score": 0 },
+        { "text": "Có, nhưng chỉ kiểm tra số dư, không chuyển tiền", "score": 3 },
+        { "text": "Không, chuyển sang dùng 4G/5G để giao dịch ngân hàng", "score": 8 },
+        { "text": "Không giao dịch trên WiFi công cộng, dùng 4G/5G hoặc VPN nếu bắt buộc phải dùng WiFi", "score": 10 }
+      ]
+    },
+    {
+      "id": 8,
+      "pillar": "privacy",
+      "question": "Bạn đăng ảnh vé máy bay lên story Instagram để check-in trước chuyến du lịch. Bạn có che thông tin nào không?",
+      "options": [
+        { "text": "Đăng nguyên ảnh vé, không che gì", "score": 0 },
+        { "text": "Che tên nhưng để lộ mã đặt chỗ (PNR) và barcode", "score": 3 },
+        { "text": "Che tên, mã đặt chỗ, nhưng vẫn để barcode", "score": 5 },
+        { "text": "Không đăng ảnh vé máy bay. Thay vào đó chụp ảnh cảnh đẹp và đăng SAU khi về", "score": 10 }
+      ]
+    },
+    {
+      "id": 9,
+      "pillar": "incident",
+      "question": "Bạn phát hiện tài khoản Facebook bị đăng nhập từ thiết bị lạ ở nước ngoài. Bạn xử lý thế nào?",
+      "options": [
+        { "text": "Không làm gì, có thể Facebook bị lỗi", "score": 0 },
+        { "text": "Đổi mật khẩu Facebook", "score": 5 },
+        { "text": "Đổi mật khẩu + Đăng xuất tất cả thiết bị khác", "score": 7 },
+        { "text": "Đổi mật khẩu + Đăng xuất hết + Bật 2FA + Kiểm tra email/tài khoản liên kết + Đổi mật khẩu email nếu dùng chung", "score": 10 }
+      ]
+    },
+    {
+      "id": 10,
+      "pillar": "incident",
+      "question": "Bạn lỡ chuyển 5 triệu cho kẻ lừa đảo giả mạo người bán hàng online. Bạn hành động theo thứ tự nào?",
+      "options": [
+        { "text": "Chấp nhận mất tiền, rút kinh nghiệm", "score": 0 },
+        { "text": "Nhắn tin chửi kẻ lừa đảo trên MXH", "score": 1 },
+        { "text": "Gọi ngân hàng yêu cầu hỗ trợ → Trình báo Công an", "score": 7 },
+        { "text": "Gọi hotline ngân hàng ngay (trong 30 phút đầu) → Lưu toàn bộ bằng chứng → Trình báo Công an → Báo cáo trên canhbao.khonggianmang.vn", "score": 10 }
+      ]
+    },
+    {
+      "id": 11,
+      "pillar": "password",
+      "question": "Bạn nhận được thông báo rằng mật khẩu của bạn xuất hiện trong một vụ rò rỉ dữ liệu (data breach). Bạn sẽ?",
+      "options": [
+        { "text": "Bỏ qua, chắc không sao", "score": 0 },
+        { "text": "Đổi mật khẩu tài khoản bị ảnh hưởng", "score": 5 },
+        { "text": "Đổi mật khẩu tài khoản đó + các tài khoản dùng chung mật khẩu", "score": 7 },
+        { "text": "Đổi tất cả mật khẩu trùng, bật 2FA, kiểm tra trên haveibeenpwned.com, chuyển sang dùng Password Manager", "score": 10 }
+      ]
+    },
+    {
+      "id": 12,
+      "pillar": "phishing",
+      "question": "Bạn thấy quảng cáo trên Facebook: 'iPhone 16 Pro Max chỉ 3 triệu, số lượng có hạn, đặt hàng ngay!'. Bạn nghĩ gì?",
+      "options": [
+        { "text": "Giá rẻ quá, đặt mua ngay trước khi hết", "score": 0 },
+        { "text": "Hơi nghi nhưng vẫn bấm xem thử", "score": 2 },
+        { "text": "Biết là lừa đảo, bỏ qua", "score": 7 },
+        { "text": "Nhận ra lừa đảo (giá phi thực tế, tạo áp lực thời gian), báo cáo quảng cáo vi phạm trên Facebook", "score": 10 }
+      ]
+    },
+    {
+      "id": 13,
+      "pillar": "privacy",
+      "question": "Website yêu cầu bạn điền số CCCD để nhận voucher giảm giá 500K. Bạn sẽ?",
+      "options": [
+        { "text": "Điền ngay để nhận voucher", "score": 0 },
+        { "text": "Điền số CCCD giả", "score": 3 },
+        { "text": "Từ chối, không điền thông tin cá nhân cho voucher", "score": 8 },
+        { "text": "Từ chối, kiểm tra tính hợp pháp của trang web, CCCD là thông tin quan trọng không bao giờ cung cấp cho bên không xác minh", "score": 10 }
+      ]
+    },
+    {
+      "id": 14,
+      "pillar": "incident",
+      "question": "Điện thoại bạn bị mất cắp. Bạn xử lý theo thứ tự nào?",
+      "options": [
+        { "text": "Mua điện thoại mới", "score": 0 },
+        { "text": "Đổi mật khẩu các tài khoản quan trọng", "score": 4 },
+        { "text": "Khóa SIM → Đổi mật khẩu → Xóa dữ liệu từ xa", "score": 7 },
+        { "text": "Khóa SIM (gọi nhà mạng) → Khóa tài khoản ngân hàng → Xóa dữ liệu từ xa (Find My) → Đổi tất cả mật khẩu → Báo Công an", "score": 10 }
+      ]
+    },
+    {
+      "id": 15,
+      "pillar": "incident",
+      "question": "Bạn nhận email xác nhận đăng ký dịch vụ mà bạn chưa bao giờ đăng ký, kèm link 'Hủy đăng ký'. Bạn sẽ?",
+      "options": [
+        { "text": "Bấm link hủy đăng ký ngay", "score": 0 },
+        { "text": "Trả lời email yêu cầu hủy", "score": 2 },
+        { "text": "Bỏ qua email, đánh dấu spam", "score": 7 },
+        { "text": "Không bấm link, kiểm tra tài khoản/ngân hàng xem có giao dịch lạ không, đánh dấu spam, đây có thể là phishing hoặc kiểm tra xem email có active không", "score": 10 }
+      ]
+    }
+  ]
+}

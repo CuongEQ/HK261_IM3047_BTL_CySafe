@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1,
+    "group": "elderly",
+    "groupLabel": "Người cao tuổi",
+    "title": "Mạo danh Công an / Viện Kiểm sát gọi điện đe dọa",
+    "icon": "👮",
+    "danger": "critical",
+    "signs": [
+      "Cuộc gọi từ số lạ, tự xưng là cán bộ điều tra Bộ Công an hoặc Viện Kiểm sát",
+      "Yêu cầu giữ bí mật tuyệt đối, cấm không được nói cho người thân hay bạn bè",
+      "Đe dọa có lệnh bắt tạm giam vì liên quan đường dây rửa tiền, buôn bán ma túy",
+      "Yêu cầu rút toàn bộ sổ tiết kiệm chuyển vào 'tài khoản bảo vệ / an toàn' để xác minh"
+    ],
+    "scenario": "Nạn nhân nhận cuộc gọi từ người tự xưng là Đại úy Công an đang thụ lý chuyên án rửa tiền xuyên quốc gia, đọc chính xác số CCCD và địa chỉ nhà. Kẻ gian gửi kèm 'Lệnh bắt tạm giam' có dấu đỏ giả mạo qua Zalo, dọa nếu không chuyển tiền chứng minh trong sạch sẽ cho xe chuyên dụng đến bắt ngay trong ngày.",
+    "action": "Tắt máy ngay lập tức. Cơ quan Công an và Viện Kiểm sát không bao giờ làm việc, gửi lệnh bắt hoặc yêu cầu chuyển tiền qua điện thoại. Gọi ngay đường dây nóng 113 hoặc đến trụ sở Công an phường/xã gần nhất để trình báo.",
+    "prevention": "Cài đặt ứng dụng chặn cuộc gọi lừa đảo. Không chia sẻ thông tin cá nhân hay hoàn cảnh gia đình trên mạng xã hội. Luôn trao đổi với con cháu trước khi đưa ra bất kỳ quyết định tài chính nào."
+  },
+  {
+    "id": 2,
+    "group": "elderly",
+    "groupLabel": "Người cao tuổi",
+    "title": "Giả mạo nhân viên Bảo hiểm Xã hội lừa thông tin & tiền tích lũy",
+    "icon": "🏥",
+    "danger": "high",
+    "signs": [
+      "Liên hệ qua điện thoại, Zalo tự xưng cán bộ cơ quan BHXH địa phương",
+      "Thông báo thẻ BHYT sắp hết hạn, sai lệch dữ liệu cần cập nhật gấp để nhận lương hưu",
+      "Yêu cầu cung cấp thông tin CCCD, số thẻ ngân hàng và mã OTP",
+      "Gửi đường link giả mạo cổng dịch vụ công yêu cầu đăng nhập tài khoản ngân hàng"
+    ],
+    "scenario": "Kẻ gian gọi điện cho người cao tuổi, thông báo thẻ BHYT có sai sót thông tin nơi khám chữa bệnh ban đầu hoặc chế độ lương hưu bị tạm khóa. Hắn gửi link lạ qua Zalo yêu cầu nạn nhân nhập thông tin thẻ ATM và mã OTP gửi về máy để 'đồng bộ hệ thống'. Sau khi nhập, tiền trong thẻ bị trừ sạch.",
+    "action": "Không bấm vào bất kỳ đường link nào được gửi qua tin nhắn. Liên hệ trực tiếp cơ quan BHXH quận/huyện hoặc tổng đài BHXH Việt Nam 1900.9068 để xác minh.",
+    "prevention": "Chỉ cập nhật thông tin qua ứng dụng chính thức VssID hoặc đến trực tiếp bộ phận một cửa BHXH. Tuyệt đối không cung cấp mã OTP cho bất kỳ ai."
+  },
+  {
+    "id": 3,
+    "group": "elderly",
+    "groupLabel": "Người cao tuổi",
+    "title": "Lừa bán thuốc, sữa, thực phẩm chức năng 'trị bách bệnh'",
+    "icon": "💊",
+    "danger": "high",
+    "signs": [
+      "Quảng cáo thuốc nam, sữa non chữa khỏi dứt điểm ung thư, xương khớp, tiểu đường",
+      "Cắt ghép hình ảnh bác sĩ nổi tiếng, đài truyền hình VTV, viện nghiên cứu uy tín",
+      "Tổ chức hội thảo tặng quà miễn phí (chảo, dầu ăn) rồi mồi chài mua combo thuốc giá chục triệu",
+      "Livestream dùng tài khoản ảo bình luận khen ngợi hiệu quả 'thần kỳ'"
+    ],
+    "scenario": "Người lớn tuổi xem video trên Facebook/YouTube có hình ảnh bác sĩ đầu ngành khuyên dùng loại thảo dược gia truyền 'khỏi hẳn tiểu đường sau 10 ngày'. Khi để lại số điện thoại, nhân viên bán hàng dồn dập tư vấn liệu trình giá 5 - 15 triệu đồng. Thực chất chỉ là bột mì hoặc rễ cây không rõ nguồn gốc gây suy gan, suy thận.",
+    "action": "Dừng sử dụng ngay lập tức nếu đã mua. Giữ lại bao bì, hóa đơn và gửi phản ánh đến Hội Bảo vệ người tiêu dùng hoặc cơ quan quản lý thị trường.",
+    "prevention": "Chỉ mua thuốc và thực phẩm chức năng tại các nhà thuốc có giấy phép và theo chỉ định của bác sĩ tại bệnh viện. Thận trọng với các hội thảo tri ân, tặng quà miễn phí kèm theo bán hàng."
+  },
+  {
+    "id": 4,
+    "group": "elderly",
+    "groupLabel": "Người cao tuổi",
+    "title": "Thông báo 'Khóa SIM sau 2 giờ' chiếm đoạt thuê bao & OTP",
+    "icon": "📞",
+    "danger": "critical",
+    "signs": [
+      "Cuộc gọi tự động hoặc từ người lạ tự xưng Cục Viễn thông, nhà mạng Viettel, Vina, Mobi",
+      "Thông báo thuê bao chưa chuẩn hóa thông tin cá nhân và sẽ bị khóa 2 chiều sau 2 giờ",
+      "Yêu cầu làm theo hướng dẫn cú pháp tin nhắn gửi đi hoặc bấm phím chuyển cuộc gọi",
+      "Yêu cầu đọc mã xác thực gửi về máy để 'kỹ thuật viên xử lý mở khóa'"
+    ],
+    "scenario": "Nạn nhân nhận cuộc gọi đe dọa SIM sẽ bị khóa vĩnh viễn trong 2 tiếng nếu không cập nhật lại thông tin chủ thuê bao. Kẻ gian hướng dẫn nạn nhân soạn cú pháp tin nhắn chuyển đổi SIM sang eSIM hoặc chuyển hướng cuộc gọi. Ngay sau đó, SIM trên máy nạn nhân mất sóng, kẻ gian chiếm quyền kiểm soát số điện thoại để đăng nhập tài khoản ngân hàng và rút tiền.",
+    "action": "Tắt máy ngay lập tức. Tuyệt đối không soạn tin nhắn theo cú pháp người lạ hướng dẫn. Đến ngay điểm giao dịch nhà mạng gần nhất hoặc gọi tổng đài chính thức để kiểm tra trạng thái thuê bao.",
+    "prevention": "Chủ động chuẩn hóa thông tin thuê bao trực tiếp tại đại lý nhà mạng hoặc qua app chính thức (My Viettel, My VNPT, My MobiFone). Kiểm tra thông tin chính chủ bằng cách soạn TTTB gửi 1414."
+  },
+  {
+    "id": 5,
+    "group": "elderly",
+    "groupLabel": "Người cao tuổi",
+    "title": "Thông báo trúng thưởng quà tri ân / Vòng quay may mắn giả mạo",
+    "icon": "🎁",
+    "danger": "high",
+    "signs": [
+      "Nhận cuộc gọi hoặc thư bưu điện thông báo trúng xe máy SH, tivi, sổ tiết kiệm 200 triệu",
+      "Tự xưng là đại diện các siêu thị điện máy lớn, sàn TMĐT tri ân khách hàng thân thiết",
+      "Yêu cầu chuyển trước 5 - 10% tiền 'thuế thu nhập cá nhân' hoặc 'phí vận chuyển bảo hiểm'",
+      "Hứa hẹn sau khi nộp phí sẽ có ban tổ chức mang quà tận nhà trao tặng"
+    ],
+    "scenario": "Người cao tuổi nhận được bưu phẩm bên trong có giấy chứng nhận trúng thưởng giải đặc biệt từ một chương trình tri ân khách hàng. Khi gọi lại số hotline trên giấy, đối tượng yêu cầu chuyển 8 triệu đồng 'phí bảo hiểm hàng giá trị cao'. Sau khi chuyển tiền, số điện thoại bị chặn và không có bất kỳ món quà nào được chuyển đến.",
+    "action": "Không chuyển tiền tạm ứng dưới bất kỳ lý do nào. Doanh nghiệp chân chính không bao giờ bắt khách hàng đóng tiền trước để nhận giải thưởng tri ân.",
+    "prevention": "Xác minh các chương trình khuyến mãi trên website chính thức của thương hiệu hoặc cổng thông tin của Sở Công Thương địa phương."
+  },
+  {
+    "id": 6,
+    "group": "family",
+    "groupLabel": "Phụ huynh & Gia đình",
+    "title": "Thủ đoạn 'Bắt cóc Online' (Bắt cóc ảo) thao túng tâm lý tống tiền",
+    "icon": "🚨",
+    "danger": "critical",
+    "signs": [
+      "Kẻ gian gọi điện mạo danh Công an dọa nạt học sinh/sinh viên dính líu đến án ma túy/hình sự",
+      "Thao túng ép nạn nhân tự thuê phòng khách sạn kín, ngắt liên lạc hoàn toàn với gia đình và bạn bè",
+      "Bắt nạn nhân tự chụp ảnh, quay video trói tay chân, van xin kêu cứu để 'làm chứng cứ vô tội'",
+      "Đồng thời gọi cho cha mẹ, gửi video kêu cứu đe dọa con đang bị bắt cóc, đòi chuộc gấp tiền tỷ"
+    ],
+    "scenario": "Du học sinh hoặc sinh viên học xa nhà nhận cuộc gọi dọa có lệnh bắt quốc tế. Bị thao túng tâm lý sợ hãi, em làm theo lệnh kẻ gian: tắt định vị, mua SIM mới, thuê phòng khách sạn cách ly và tự trói tay quay clip khóc lóc gửi cho 'cán bộ điều tra'. Ngay lập tức, kẻ gian gọi cho bố mẹ ở quê, gửi video trên và đòi 1,5 tỷ đồng tiền chuộc trong vòng 2 tiếng, đe dọa sẽ giết con nếu báo công an.",
+    "action": "Giữ bình tĩnh tối đa, TUYỆT ĐỐI KHÔNG CHUYỂN TIỀN NGAY. Ngay lập tức liên hệ nhà trường, ký túc xá, bạn cùng phòng hoặc người quen gần nơi con ở để tới kiểm tra trực tiếp. Trình báo ngay cho Cục Cảnh sát hình sự (C02) hoặc Công an gần nhất để xử lý.",
+    "prevention": "Gia đình cần quy ước 'mật khẩu khẩn cấp' nội bộ chỉ người trong nhà biết. Dặn dò con em cảnh giác với mọi cuộc gọi tự xưng cơ quan công quyền. Tuyệt đối không nghe theo lời người lạ tự cô lập bản thân."
+  },
+  {
+    "id": 7,
+    "group": "family",
+    "groupLabel": "Phụ huynh & Gia đình",
+    "title": "Lừa đảo 'Con đang cấp cứu ở bệnh viện' chuyển tiền mổ gấp",
+    "icon": "🚑",
+    "danger": "critical",
+    "signs": [
+      "Cuộc gọi trong giờ học tự xưng là giáo viên chủ nhiệm, giám thị trường hoặc bác sĩ bệnh viện lớn",
+      "Hốt hoảng báo tin con bị ngã cầu thang, chấn thương sọ não hoặc tai nạn giao thông rất nặng",
+      "Thúc ép chuyển gấp 20 - 50 triệu viện phí phẫu thuật ngay lập tức, nếu chậm sẽ nguy hiểm tính mạng",
+      "Mở âm thanh còi hú cấp cứu, tiếng la hét bệnh viện phía sau để gây hoảng loạn tâm lý tột độ"
+    ],
+    "scenario": "Phụ huynh đang đi làm thì nhận cuộc gọi từ người tự xưng là thầy giáo, báo con vừa ngã từ tầng lầu trường học xuống đất, đang được chuyển vào Bệnh viện Chợ Rẫy mổ cấp cứu. Một giọng nói tự xưng bác sĩ trưởng khoa cấp cứu nghe máy giục phụ huynh chuyển gấp 40 triệu đồng vào tài khoản cá nhân để mua dụng cụ mổ ngay.",
+    "action": "Không chuyển tiền ngay! Lập tức gọi trực tiếp cho con, hoặc gọi cho giáo viên chủ nhiệm, giám thị, phòng y tế của trường để xác minh. Gọi vào hotline chính thức của bệnh viện nơi kẻ gian thông báo.",
+    "prevention": "Lưu sẵn số điện thoại của giáo viên chủ nhiệm và phòng y tế trường học. Nhắc nhở người thân và bảo mẫu trong gia đình về thủ đoạn này."
+  },
+  {
+    "id": 8,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Giả mạo App VNeID / Dịch vụ công / Thuế cài mã độc chiếm quyền điện thoại",
+    "icon": "📱",
+    "danger": "critical",
+    "signs": [
+      "Cuộc gọi xưng công an phường hoặc cán bộ thuế yêu cầu kích hoạt định danh mức 2 / hoàn thuế",
+      "Gửi link lạ qua Zalo/Telegram yêu cầu tải file cài đặt có đuôi .APK (không tải qua Google Play/App Store)",
+      "Ứng dụng yêu cầu cấp quyền Trợ năng (Accessibility Service) và quyền Đọc màn hình",
+      "Màn hình điện thoại đột ngột tối đen, giật lag, app ngân hàng tự bật mà không thao tác được"
+    ],
+    "scenario": "Nạn nhân nhận cuộc gọi tự xưng cán bộ chi cục Thuế hướng dẫn làm thủ tục miễn giảm thuế qua ứng dụng 'Thuế Điện Tử'. Đối tượng gửi file cài đặt APK qua Zalo và hướng dẫn cấp quyền Trợ năng. Ngay sau khi cấp quyền, kẻ gian từ xa điều khiển màn hình, vượt qua xác thực sinh trắc học và rút sạch 400 triệu đồng trong tài khoản tiết kiệm của nạn nhân.",
+    "action": "Ngắt ngay kết nối Wi-Fi, 4G hoặc tắt nguồn điện thoại lập tức. Dùng một thiết bị an toàn khác để đăng nhập Internet Banking khóa khẩn cấp tài khoản hoặc gọi hotline ngân hàng. Đưa điện thoại đến trung tâm kỹ thuật uy tín chạy lại phần mềm gốc.",
+    "prevention": "Tuyệt đối không bao giờ cài đặt ứng dụng từ file .APK tải qua đường link người lạ gửi. Cơ quan nhà nước không bao giờ gọi điện yêu cầu cài app qua Zalo."
+  },
+  {
+    "id": 9,
+    "group": "family",
+    "groupLabel": "Phụ huynh & Gia đình",
+    "title": "Dịch vụ 'Lấy lại tiền bị lừa đảo' / 'Thu hồi vốn treo' (Bẫy lừa đảo kép)",
+    "icon": "💸",
+    "danger": "critical",
+    "signs": [
+      "Fanpage mang tên 'Cục An ninh mạng', 'Văn phòng Luật sư hỗ trợ thu hồi vốn' có tích xanh giả",
+      "Cam kết lấy lại 100% số tiền đã bị lừa đảo qua app cờ bạc, nhiệm vụ Shopee, sàn tài chính",
+      "Yêu cầu nạn nhân cung cấp thông tin tài khoản, sao kê và nộp 'phí thụ lý / phí kéo tiền'",
+      "Tạo ảnh chụp hệ thống ngân hàng giả mạo đã phong tỏa được tiền nhưng đòi đóng thêm 'thuế giải ngân'"
+    ],
+    "scenario": "Sau khi bị lừa mất 100 triệu từ bẫy cộng tác viên, nạn nhân đau lòng tìm kiếm cứu cánh trên mạng và thấy trang 'Hội Luật sư can thiệp an ninh mạng'. Nhóm này khẳng định có thể dùng mã can thiệp cổng thanh toán lấy lại tiền, nhưng yêu cầu nộp 10 triệu 'phí mở cổng kết nối'. Nạn nhân nộp xong tiếp tục bị bắt đóng thêm 20 triệu 'thuế bảo đảm', mất trắng thêm lần nữa.",
+    "action": "Dừng ngay mọi liên lạc và tuyệt đối không chuyển thêm tiền. Cơ quan Công an thụ lý đơn tố giác hoàn toàn miễn phí; không có bất kỳ cá nhân hay tổ chức tư nhân nào có khả năng 'hack cổng ngân hàng' để lấy lại tiền.",
+    "prevention": "Khi phát hiện bị lừa đảo trực tuyến, hãy thu thập toàn bộ bằng chứng và đến trực tiếp cơ quan Công an cấp quận/huyện nơi cư trú để trình báo."
+  },
+  {
+    "id": 10,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Tuyển cộng tác viên 'việc nhẹ lương cao' trên Shopee/TikTok/Telegram",
+    "icon": "💼",
+    "danger": "critical",
+    "signs": [
+      "Tin nhắn tuyển dụng CTV online làm tại nhà, thu nhập 500K - 2 triệu đồng/ngày",
+      "Nhiệm vụ ban đầu đơn giản: like video TikTok, nghe nhạc, đặt đơn hàng ảo Shopee để nhận hoa hồng",
+      "Những đơn đầu tiên trị giá nhỏ cho rút tiền rất nhanh và đầy đủ để tạo lòng tin tuyệt đối",
+      "Đến nhiệm vụ giá trị lớn (5 - 50 triệu) thì báo 'lỗi hệ thống', ép nạp thêm tiền để mở khóa rút tiền"
+    ],
+    "scenario": "Sinh viên nhận lời mời làm CTV xử lý đơn hàng trên Telegram. Ban đầu nạp 200k nhận lại 260k, nạp 1 triệu nhận lại 1,3 triệu. Thấy dễ ăn, em nạp tiếp đơn 20 triệu thì hệ thống báo 'sai cú pháp nạp', yêu cầu nạp thêm 40 triệu để sửa lỗi. Em vay mượn bạn bè nạp vào thì bị chặn tài khoản và xóa nhóm chat.",
+    "action": "Ngừng nạp tiền và dừng liên lạc ngay lập tức! Dù kẻ gian dọa mất toàn bộ tiền cũng tuyệt đối không nạp thêm. Lưu lại toàn bộ tin nhắn, sao kê ngân hàng và trình báo Công an.",
+    "prevention": "Ghi nhớ: Trên đời không có 'việc nhẹ lương cao'. Các sàn TMĐT chính thống (Shopee, Lazada, TikTok Shop) không bao giờ tuyển CTV đặt đơn ảo nhận hoa hồng."
+  },
+  {
+    "id": 11,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Bẫy app vay tiền online 'tín dụng đen' lãi suất cắt cổ",
+    "icon": "🏦",
+    "danger": "critical",
+    "signs": [
+      "Quảng cáo vay tiền siêu tốc, không cần gặp mặt, không thế chấp, duyệt giải ngân trong 5 phút",
+      "App bắt buộc cấp quyền truy cập toàn bộ danh bạ điện thoại, tin nhắn SMS và kho ảnh cá nhân",
+      "Số tiền thực nhận bị trừ 30 - 50% tiền 'phí dịch vụ', kỳ hạn trả nợ chỉ 3 - 7 ngày",
+      "Nếu chậm trả 1 ngày, kẻ gian liên tục gọi điện chửi bới, ghép ảnh nhạy cảm bôi nhọ gửi bạn bè, người thân"
+    ],
+    "scenario": "Sinh viên cần tiền đóng học phí nên tải app vay 5 triệu. Tài khoản thực nhận chỉ có 2,8 triệu, 7 ngày sau phải trả 5,5 triệu. Không có tiền trả, app tự động gợi ý tải thêm 3 app khác trong cùng đường dây để 'đảo nợ'. Chỉ sau 1 tháng, số nợ phình to lên hơn 100 triệu, cả gia đình và bạn bè bị gọi điện khủng bố ngày đêm.",
+    "action": "Gỡ cài đặt app, bật chặn cuộc gọi số lạ. Thông báo cho người thân, bạn bè biết mình bị bẫy tín dụng đen để không hoang mang. Làm đơn tố giác tội phạm gửi cơ quan Công an.",
+    "prevention": "Chỉ tiếp cận nguồn vốn từ các ngân hàng thương mại uy tín hoặc quỹ tín dụng sinh viên của Nhà nước. Không bao giờ cấp quyền truy cập danh bạ, hình ảnh cho các app vay tiền lạ."
+  },
+  {
+    "id": 12,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Chiếm đoạt tài khoản MXH qua link bình chọn, game lừa đảo (Phishing)",
+    "icon": "🔗",
+    "danger": "high",
+    "signs": [
+      "Tin nhắn từ bạn bè, người quen nhờ bấm link 'bình chọn bé ngoan', 'bình chọn cuộc thi tài năng'",
+      "Trang web mở ra có giao diện đăng nhập giống hệt Facebook, Zalo nhưng địa chỉ URL sai khác lạ",
+      "Yêu cầu nhập tên đăng nhập, mật khẩu và mã xác thực 2 lớp OTP",
+      "Ngay sau khi nhập, tài khoản bị đăng xuất trên máy và đổi email, mật khẩu khôi phục"
+    ],
+    "scenario": "Nhận tin nhắn từ tài khoản của người bạn thân: 'Vào link này vote cho cháu mình thi giọng hát nhí nhé'. Bấm vào link thấy yêu cầu đăng nhập Facebook để xác nhận lượt vote. Nạn nhân nhập mật khẩu xong thì mất quyền kiểm soát nick. Kẻ gian lập tức nhắn tin cho toàn bộ danh bạ mượn tiền chữa bệnh.",
+    "action": "Nếu còn đăng nhập được, lập tức đổi mật khẩu và chọn 'Đăng xuất khỏi tất cả các thiết bị khác'. Bật xác thực 2 yếu tố qua Google Authenticator. Báo ngay cho người thân biết tài khoản đã bị kẻ gian chiếm giữ.",
+    "prevention": "Quan sát kỹ thanh địa chỉ URL trên trình duyệt trước khi nhập mật khẩu. Không sử dụng chung một mật khẩu cho nhiều tài khoản trực tuyến."
+  },
+  {
+    "id": 13,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Dụ dỗ đầu tư sàn tiền ảo, Forex đa cấp cam kết lãi khủng",
+    "icon": "📈",
+    "danger": "critical",
+    "signs": [
+      "Các 'chuyên gia tài chính', 'thầy dạy làm giàu' khoe xe sang, nhà lầu, cuộc sống thượng lưu trên MXH",
+      "Cam kết lợi nhuận khủng 30% - 60%/tháng, 'đánh đâu thắng đó, bảo hiểm vốn 100%'",
+      "Sàn giao dịch tự lập không có giấy phép của Ủy ban Chứng khoán Nhà nước hay Ngân hàng Nhà nước",
+      "Cho rút tiền lời nhỏ vài lần đầu, khi gom được số vốn lớn thì chỉnh lệnh cho cháy tài khoản hoặc sập sàn"
+    ],
+    "scenario": "Thanh niên được bạn quen trên mạng rủ tham gia nhóm Telegram 'VIP Signal Đầu Tư 4.0'. Ban đầu bỏ 10 triệu, sau 3 ngày thấy tài khoản tăng lên 25 triệu và rút được bình thường. Nạn nhân dốc hết 200 triệu tiền tiết kiệm và vay thêm ngân hàng nạp vào. Khi muốn rút, sàn báo 'tài khoản bị nghi ngờ rửa tiền, phải nộp thêm 50 triệu phí xác minh', sau đó sàn đánh sập.",
+    "action": "Không nạp thêm bất kỳ khoản tiền nào. Thu thập chứng từ chuyển khoản, hình ảnh giao dịch, thông tin tài khoản kẻ gian và nộp đơn đến Cơ quan Cảnh sát điều tra (Công an tỉnh/thành phố).",
+    "prevention": "Tại Việt Nam, tiền mã hóa và sàn Forex quốc tế chưa được pháp luật công nhận và bảo hộ. Không có khoản đầu tư nào lợi nhuận cao mà không có rủi ro."
+  },
+  {
+    "id": 14,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Tống tiền bằng hình ảnh/video nhạy cảm (Sextortion)",
+    "icon": "⚠️",
+    "danger": "critical",
+    "signs": [
+      "Tài khoản người lạ có hình ảnh đại diện hấp dẫn, chủ động kết bạn và làm quen thân mật",
+      "Nhanh chóng chuyển sang tán tỉnh, gợi ý gọi video call 'nóng bỏng' hoặc trao đổi ảnh riêng tư",
+      "Kẻ gian bí mật quay lại màn hình video hoặc dùng phần mềm AI ghép mặt nạn nhân vào clip khiêu dâm",
+      "Gửi tin nhắn đe dọa phát tán clip cho bố mẹ, bạn bè, thầy cô nếu không chuyển tiền trong 24 giờ"
+    ],
+    "scenario": "Một nam thanh niên kết bạn với một tài khoản nữ xinh đẹp trên Instagram. Sau vài ngày nhắn tin, đối phương rủ gọi video nhạy cảm qua Zalo. Chỉ 5 phút sau khi cúp máy, nạn nhân nhận lại ảnh chụp màn hình cơ thể mình kèm danh sách bạn bè trên Facebook và lời đe dọa: 'Chuyển 15 triệu trong 1 tiếng, nếu không clip này sẽ lên tường tất cả bạn bè'.",
+    "action": "TUYỆT ĐỐI KHÔNG CHUYỂN TIỀN (vì khi chuyển xong kẻ gian sẽ tiếp tục tống tiền với số tiền lớn hơn). Chặn tài khoản, đặt trang cá nhân ở chế độ riêng tư, lưu bằng chứng và báo ngay cho cơ quan Công an.",
+    "prevention": "Không chia sẻ hình ảnh, clip nhạy cảm với bất kỳ ai trên không gian mạng. Cảnh giác với những mối quan hệ phát triển quá nhanh bất thường từ người lạ."
+  },
+  {
+    "id": 15,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Lừa đảo bẫy học bổng du học, visa lao động quốc tế / xuất khẩu lao động",
+    "icon": "✈️",
+    "danger": "critical",
+    "signs": [
+      "Quảng cáo học bổng toàn phần 100% tại các trường đại học danh tiếng không cần IELTS hay hồ sơ khắt khe",
+      "Cam kết 'bao đỗ visa du học / xuất khẩu lao động' sang Hàn Quốc, Úc, Canada lương 60 - 80 triệu/tháng",
+      "Yêu cầu nộp tiền cọc hồ sơ, phí chứng minh tài chính từ hàng chục đến hàng trăm triệu đồng",
+      "Trụ sở công ty chỉ là văn phòng ảo, hợp đồng mập mờ không có tư cách pháp nhân hợp pháp"
+    ],
+    "scenario": "Gia đình muốn cho con đi xuất khẩu lao động Hàn Quốc, tìm đến một công ty quảng cáo trên mạng hứa hẹn bay sau 3 tháng không cần thi tiếng. Gia đình đã gom góp nộp 150 triệu tiền cọc làm visa. Đến ngày hẹn, văn phòng công ty đóng cửa, số điện thoại giám đốc không liên lạc được.",
+    "action": "Giữ lại toàn bộ phiếu thu, hợp đồng dịch vụ, sao kê ngân hàng và làm đơn tố cáo gửi đến Sở Lao động - Thương binh & Xã hội và Công an phụ trách địa bàn.",
+    "prevention": "Tra cứu danh sách doanh nghiệp được cấp phép đưa người lao động đi làm việc ở nước ngoài trên cổng thông tin Cục Quản lý lao động ngoài nước (dolab.gov.vn)."
+  },
+  {
+    "id": 16,
+    "group": "youth",
+    "groupLabel": "Học sinh, Sinh viên & Thanh niên",
+    "title": "Lừa đảo nạp thẻ game, mua bán tài khoản VIP qua web thanh toán ảo",
+    "icon": "🎮",
+    "danger": "high",
+    "signs": [
+      "Quảng cáo nạp thẻ cào game nhận khuyến mãi x5, x10 giá trị quân huy, kim cương, robux",
+      "Bán tài khoản game khủng với giá siêu rẻ kèm theo điều kiện phải chuyển khoản trước",
+      "Website có giao diện giả mạo các nhà phát hành lớn (Garena, VNG, Riot Games)",
+      "Sau khi nạp thẻ, trang web báo 'lỗi giao dịch' và yêu cầu nạp thêm thẻ mệnh giá lớn hơn để đền bù"
+    ],
+    "scenario": "Học sinh thấy video trên TikTok quảng cáo trang web nạp thẻ tặng 50.000 quân huy chỉ với thẻ cào 100k. Em mua thẻ cào nhập vào trang web, hệ thống báo 'cần nạp thêm thẻ 200k để kích hoạt tài khoản VIP mới nhận được quà'. Nạp xong cả 2 thẻ, em không nhận được gì và tài khoản game còn bị đổi mật khẩu.",
+    "action": "Ngừng nạp thêm thẻ. Đổi ngay mật khẩu tài khoản game nếu đã lỡ đăng nhập trên web lạ. Báo cáo video và kênh lừa đảo trên nền tảng mạng xã hội.",
+    "prevention": "Chỉ nạp game qua các kênh thanh toán chính thức được công bố trên website của nhà phát hành. Không tin vào các chiêu trò khuyến mãi bất thường ngoài luồng."
+  },
+  {
+    "id": 17,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Chiếm đoạt mã OTP / SMS Brandname ngân hàng giả mạo (SMS Phishing)",
+    "icon": "🔐",
+    "danger": "critical",
+    "signs": [
+      "Tin nhắn xuất hiện chung luồng tin nhắn chính thức của ngân hàng (do trạm BTS giả mạo phát sóng)",
+      "Nội dung thông báo: 'Tài khoản của bạn vừa đăng nhập ở vùng lạ, hãy vào link... để hủy giao dịch'",
+      "Đường link đính kèm có tên gần giống ngân hàng thật (ví dụ: vietcombank-ibanking.com)",
+      "Giao diện yêu cầu nhập tên đăng nhập, mật khẩu Internet Banking và mã Smart OTP"
+    ],
+    "scenario": "Nhân viên văn phòng nhận tin nhắn SMS Brandname từ tên ngân hàng mình đang sử dụng thông báo tài khoản có nguy cơ bị khóa do nghi ngờ gian lận, yêu cầu bấm vào link xác nhận. Do tin nhắn nằm chung hộp thư với các biến động số dư trước đó, nạn nhân bấm vào nhập thông tin và OTP. Chỉ 30 giây sau, toàn bộ 80 triệu đồng trong tài khoản bị rút sạch.",
+    "action": "Lập tức gọi tổng đài khẩn cấp của ngân hàng để yêu cầu khóa toàn bộ thẻ và dịch vụ ngân hàng điện tử. Đổi mật khẩu từ một thiết bị an toàn khác.",
+    "prevention": "Ghi nhớ: Ngân hàng KHÔNG BAO GIỜ gửi tin nhắn chứa đường link yêu cầu khách hàng đăng nhập tài khoản hay cung cấp mã OTP. Tuyệt đối không bấm vào link lạ trong SMS."
+  },
+  {
+    "id": 18,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Giả mạo biên lai chuyển tiền / Mã QR độc hại dán đè tại cửa hàng",
+    "icon": "📲",
+    "danger": "high",
+    "signs": [
+      "Khách mua hàng gửi ảnh chụp màn hình biên lai chuyển khoản thành công nhưng tiền chưa vào tài khoản",
+      "Kẻ gian hối thúc giao hàng ngay vì đang có việc bận, nói do chuyển liên ngân hàng nên tiền về chậm",
+      "Mã QR thanh toán tại quán ăn, quầy thu ngân bị kẻ gian lén dán đè một mã QR khác lên trên",
+      "Quét mã QR dẫn tới một website lừa đảo yêu cầu nhập số điện thoại hoặc tải app lạ"
+    ],
+    "scenario": "Chủ tiệm tạp hóa bán đơn hàng 8 triệu đồng cho khách lạ. Khách đưa màn hình điện thoại chụp biên lai đã chuyển tiền thành công rất sắc nét (tạo bằng web làm giả bill ngân hàng). Chủ quán tin tưởng cho khách chở hàng đi. Đến cuối ngày vẫn không thấy tiền về tài khoản, lúc này mới phát hiện biên lai là giả.",
+    "action": "Chỉ bàn giao hàng hóa hoặc dịch vụ khi tài khoản ngân hàng của chính mình ĐÃ BÁO CỘNG TIỀN thực tế. Thường xuyên kiểm tra bảng mã QR tại quầy thanh toán xem có bị dán đè hay không.",
+    "prevention": "Sử dụng loa thông báo biến động số dư tự động khi nhận tiền. Trang bị bảng mã QR có mica bảo vệ cố định tránh bị dán đè."
+  },
+  {
+    "id": 19,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Công nghệ Deepfake AI giả khuôn mặt & giọng nói mượn tiền khẩn cấp",
+    "icon": "🤖",
+    "danger": "critical",
+    "signs": [
+      "Nhận cuộc gọi video chỉ kéo dài vài giây rồi tắt với lý do 'mạng yếu', 'sóng chập chờn'",
+      "Hình ảnh khuôn mặt và khẩu hình miệng người thân cử động hơi đơ cứng, giật hình, ánh sáng không tự nhiên",
+      "Giọng nói rất giống nhưng tông giọng có phần vô cảm, ngắt quãng",
+      "Sau khi cúp máy, nhắn tin hối thúc chuyển tiền gấp vào một số tài khoản mang tên người lạ"
+    ],
+    "scenario": "Một người nhận được cuộc gọi video Messenger từ tài khoản của anh trai ruột đang sống tại Hà Nội. Trong video thấy rõ mặt anh trai vẫy tay nói: 'Mạng yếu quá em ơi, chuyển gấp cho anh 30 triệu vào số tài khoản bạn anh này để đặt cọc xe máy, lát anh chuyển lại nhé'. Nghĩ là anh mình thật nên đã chuyển tiền. Đến tối gọi lại cho anh mới biết Facebook anh đã bị hack từ sáng.",
+    "action": "Khi nhận yêu cầu mượn tiền qua video call, hãy cúp máy và GỌI LẠI TRỰC TIẾP bằng số điện thoại di động thông thường. Đặt ra những câu hỏi riêng tư chỉ 2 người thân thiết mới biết để thử thách.",
+    "prevention": "Hạn chế đăng tải các video rõ nét cận mặt hoặc file ghi âm giọng nói công khai trên mạng xã hội. Thống nhất một quy ước kiểm tra chéo trong gia đình trước khi chuyển tiền."
+  },
+  {
+    "id": 20,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Email mạo danh sếp / đối tác thay đổi tài khoản nhận tiền (BEC)",
+    "icon": "📧",
+    "danger": "critical",
+    "signs": [
+      "Email gửi từ địa chỉ gần giống hệt sếp hoặc đối tác quen thuộc (ví dụ: gíamdoc@congty.com hoặc thay chữ i thành l)",
+      "Nội dung yêu cầu chuyển gấp một khoản tiền hợp đồng lớn cho đối tác vào tài khoản mới",
+      "Gửi vào thời điểm nhạy cảm: chiều muộn thứ Sáu, trước kỳ nghỉ lễ dài ngày hoặc khi sếp đang đi công tác",
+      "Yêu cầu giữ bí mật tuyệt đối về giao dịch, không được bàn tán trong công ty"
+    ],
+    "scenario": "Kế toán một doanh nghiệp nhận email từ 'Tổng Giám đốc' chỉ đạo chuyển khẩn cấp 500 triệu đồng tiền đặt cọc thiết bị cho đối tác nước ngoài. Email viết theo đúng phong cách chỉ đạo thường ngày của sếp. Do sếp đang bay công tác không gọi được, kế toán thực hiện lệnh chuyển tiền vào số tài khoản đối tác 'mới cập nhật'. Sang tuần sau sếp về đối chiếu mới phát hiện email kia là giả mạo.",
+    "action": "Dừng ngay lệnh chuyển tiền. Liên hệ trực tiếp qua điện thoại hoặc gặp mặt người có thẩm quyền ký duyệt để xác nhận. Báo cho bộ phận an ninh mạng / IT công ty để cô lập máy chủ email.",
+    "prevention": "Doanh nghiệp phải thiết lập quy trình duyệt chi đa chữ ký nghiêm ngặt. Bất kỳ thông báo thay đổi số tài khoản nhận tiền nào của đối tác cũng phải có biên bản xác nhận bằng văn bản có đóng dấu mộc đỏ."
+  },
+  {
+    "id": 21,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Phát tán mã độc tống tiền Ransomware qua hóa đơn/hợp đồng điện tử",
+    "icon": "💾",
+    "danger": "critical",
+    "signs": [
+      "Email mạo danh Chi cục Thuế, Điện lực EVN hoặc đơn vị vận chuyển gửi 'Hóa đơn điện tử điều chỉnh'",
+      "Tệp đính kèm có đuôi nén lạ như .zip, .rar, .iso, hoặc file Word/Excel có macro yêu cầu kích hoạt 'Enable Content'",
+      "Sau khi mở file, máy tính chạy chậm đột ngột, quạt tản nhiệt rú mạnh",
+      "Toàn bộ dữ liệu trong máy bị đổi đuôi lạ, màn hình hiện thông báo đòi tiền chuộc bằng Bitcoin"
+    ],
+    "scenario": "Nhân viên phòng thu mua mở một file đính kèm mang tên 'Bien_ban_quyet_toan_thue.zip'. Vừa giải nén và bấm vào file bên trong, toàn bộ tài liệu Word, Excel, file kế toán trên máy và toàn bộ ổ đĩa dùng chung nội bộ công ty bị mã hóa thành đuôi .locked. Tin tặc để lại tệp hướng dẫn đòi nộp 5.000 USD tiền ảo để lấy chìa khóa giải mã.",
+    "action": "Ngay lập tức rút dây mạng LAN và tắt Wi-Fi của máy tính bị nhiễm để tránh mã độc lây lan sang các máy khác trong mạng nội bộ. Tuyệt đối không tự ý trả tiền chuộc cho tin tặc. Báo ngay cho chuyên gia an toàn thông tin.",
+    "prevention": "Thực hiện sao lưu (backup) dữ liệu định kỳ theo nguyên tắc 3-2-1 ra ổ cứng ngoài ngắt mạng. Cài đặt phần mềm diệt virus bản quyền và không mở file lạ đính kèm trong email."
+  },
+  {
+    "id": 22,
+    "group": "worker",
+    "groupLabel": "Người lao động & Công sở",
+    "title": "Bẫy tình cảm - lừa đảo đầu tư tài chính xuyên quốc gia ('Pig Butchering' / Mổ heo)",
+    "icon": "💔",
+    "danger": "critical",
+    "signs": [
+      "Người lạ có profile hoàn hảo (doanh nhân thành đạt, ngoại hình đẹp) làm quen trên Tinder, Facebook, LinkedIn",
+      "Nhắn tin quan tâm chăm sóc ân cần nhiều tuần, xây dựng mối quan hệ tình cảm sâu đậm, vẽ ra tương lai kết hôn",
+      "Bắt đầu chia sẻ về việc kiếm được nhiều tiền từ sàn đầu tư vàng, tiền ảo, dầu mỏ và hướng dẫn tham gia",
+      "Ban đầu cho nạn nhân thắng lớn và rút được tiền thật, sau đó khuyên gom toàn bộ tài sản nạp vào rồi khóa tài khoản"
+    ],
+    "scenario": "Một nữ nhân viên văn phòng độc thân quen một người tự xưng là kỹ sư dầu khí định cư tại Singapore. Sau 2 tháng tâm sự như người yêu, anh rủ chị cùng đầu tư vào một sàn giao dịch để tích lũy mua nhà chung. Ban đầu chị nạp 50 triệu, rút lãi được 15 triệu. Tin tưởng, chị vay ngân hàng và cầm cố sổ đỏ nộp vào 2,5 tỷ. Khi muốn rút tiền, sàn đòi nộp 20% phí thuế, chị liên lạc thì 'người yêu' đã chặn số biến mất.",
+    "action": "Chấp nhận sự thật, ngừng ngay việc nạp tiền 'đóng phí giải cứu'. Chụp lại toàn bộ lịch sử tin nhắn tình cảm, các tài khoản ngân hàng nhận tiền và trình báo Cơ quan Cảnh sát điều tra.",
+    "prevention": "Tuyệt đối không bàn chuyện đầu tư tiền bạc với người chỉ quen biết qua mạng xã hội chưa từng gặp mặt ngoài đời thực. Cảnh giác cao độ với những người quá hoàn hảo chủ động tiếp cận."
+  },
+  {
+    "id": 23,
+    "group": "family",
+    "groupLabel": "Phụ huynh & Gia đình",
+    "title": "Lừa đảo Combo du lịch, vé máy bay giá rẻ mùa cao điểm",
+    "icon": "🏖️",
+    "danger": "high",
+    "signs": [
+      "Fanpage du lịch chạy quảng cáo rầm rộ combo nghỉ dưỡng resort 5 sao, vé máy bay khứ hồi giá rẻ giật mình",
+      "Sử dụng tên gần giống các công ty lữ hành uy tín (Vietravel, Saigontourist, Vinpearl) kèm tích xanh mua lậu",
+      "Thúc ép chuyển khoản cọc 50% - 100% giữ chỗ vì 'chỉ còn 2 suất cuối cùng cho ngày hôm nay'",
+      "Gửi mã đặt chỗ vé máy bay (code ảo) chưa thanh toán tiền cho hãng hàng không"
+    ],
+    "scenario": "Một gia đình lên kế hoạch du lịch Phú Quốc dịp hè, thấy trang 'Combo Vinpearl Giá Rẻ' chào bán gói 4 ngày 3 đêm cho cả nhà giá chỉ 6 triệu đồng. Sau khi chuyển khoản 100% tiền combo, đối tượng gửi một vé máy bay giả qua Zalo. Đến ngày ra sân bay làm thủ tục, nhân viên hãng báo mã vé không tồn tại trên hệ thống, liên hệ lại fanpage thì đã bị chặn.",
+    "action": "Gọi ngay cho ngân hàng yêu cầu hỗ trợ tra soát giao dịch vừa thực hiện. Báo cáo fanpage lừa đảo cho nền tảng Facebook và cơ quan quản lý du lịch địa phương.",
+    "prevention": "Chỉ mua vé máy bay và tour du lịch trực tiếp trên website chính thức của hãng hàng không hoặc các công ty lữ hành có giấy phép lữ hành quốc tế/nội địa được Bộ VHTTDL công nhận."
+  },
+  {
+    "id": 24,
+    "group": "family",
+    "groupLabel": "Phụ huynh & Gia đình",
+    "title": "'Chuyển tiền nhầm' vào tài khoản rồi đe dọa đòi nợ tín dụng đen",
+    "icon": "💳",
+    "danger": "high",
+    "signs": [
+      "Tự nhiên nhận được một khoản tiền lạ (từ vài triệu đến vài chục triệu đồng) chuyển vào tài khoản ngân hàng",
+      "Sau đó có người liên hệ ngọt ngào bảo 'em lỡ chuyển nhầm' và xin lại nhưng yêu cầu chuyển vào một tài khoản khác",
+      "Hoặc vài ngày sau, một nhóm đối tượng xưng công ty tài chính gọi điện đòi nợ với lãi suất 'cắt cổ', nói nạn nhân đã vay nợ qua app",
+      "Đe dọa khủng bố người thân, bôi nhọ danh dự nếu không trả số tiền gốc kèm lãi suất gấp nhiều lần"
+    ],
+    "scenario": "Chị A bất ngờ thấy tài khoản ngân hàng được cộng 15 triệu đồng từ một người tên NGUYEN VAN B. Vài tiếng sau có người gọi điện khóc lóc nói là chuyển nhầm tiền chữa bệnh cho mẹ, xin chị chuyển trả lại vào số tài khoản NGUYEN THI C. Chị A thương tình chuyển ngay. Ba hôm sau, có nhóm xã hội đen gọi đến chửi bới, đòi chị A phải trả số tiền 15 triệu đã vay qua app kèm 10 triệu tiền lãi trong 3 ngày.",
+    "action": "TUYỆT ĐỐI KHÔNG CHUYỂN TRẢ LẠI NGAY vào bất kỳ tài khoản nào khác theo yêu cầu của người gọi. Hãy đến trực tiếp chi nhánh ngân hàng của mình, làm việc với nhân viên ngân hàng để hoàn trả đúng quy trình tra soát pháp lý của hệ thống ngân hàng.",
+    "prevention": "Khi nhận được tiền lạ chuyển vào tài khoản, hãy giữ nguyên số tiền đó, không sử dụng và lập tức thông báo cho ngân hàng nơi mở tài khoản."
+  }
+]

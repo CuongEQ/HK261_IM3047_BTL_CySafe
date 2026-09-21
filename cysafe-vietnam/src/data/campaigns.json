@@ -1,0 +1,104 @@
+[
+  {
+    "id": "chien-dich-chong-lua-dao-2024",
+    "title": "Chiến dịch Nhận diện & Phòng chống Lừa đảo Trực tuyến",
+    "organizer": "Cục An toàn thông tin - Bộ Thông tin và Truyền thông",
+    "year": 2024,
+    "status": "active",
+    "icon": "🛡️",
+    "summary": "Phát động toàn quốc tháng hành động tuyên truyền nhận diện và phòng chống lừa đảo trực tuyến, bảo vệ người dân trước 24 hình thức lừa đảo phổ biến nhất trên không gian mạng.",
+    "keyPoints": [
+      "24 hình thức lừa đảo trực tuyến phổ biến tại Việt Nam",
+      "Quy tắc '3 Không – 2 Phải' bảo vệ bản thân",
+      "Cổng cảnh báo quốc gia canhbao.khonggianmang.vn",
+      "Phối hợp cùng các tổ chức tài chính, ngân hàng, mạng xã hội"
+    ],
+    "link": "https://canhbao.khonggianmang.vn",
+    "badge": "Trọng điểm Quốc gia"
+  },
+  {
+    "id": "khong-gian-mang-an-toan",
+    "title": "Xây dựng Không gian Mạng Quốc gia An toàn, Lành mạnh",
+    "organizer": "Trung tâm Giám sát an toàn Không gian mạng Quốc gia (NCSC)",
+    "year": 2024,
+    "status": "active",
+    "icon": "🌐",
+    "summary": "Chương trình tổng thể nhằm xây dựng không gian mạng quốc gia an toàn, lành mạnh, góp phần đảm bảo an ninh quốc gia, trật tự an toàn xã hội.",
+    "keyPoints": [
+      "Giám sát và cảnh báo sớm các mối đe dọa an ninh mạng",
+      "Nâng cao năng lực phòng thủ mạng quốc gia",
+      "Đào tạo nguồn nhân lực an toàn thông tin",
+      "Phát triển hệ sinh thái sản phẩm an toàn thông tin Make in Vietnam"
+    ],
+    "link": "https://khonggianmang.vn",
+    "badge": "Chiến lược Quốc gia"
+  },
+  {
+    "id": "bao-ve-tre-em-moi-truong-mang",
+    "title": "Bảo vệ Trẻ em trên Môi trường Mạng",
+    "organizer": "Bộ Thông tin và Truyền thông & Bộ Lao động – Thương binh và Xã hội",
+    "year": 2024,
+    "status": "active",
+    "icon": "👶",
+    "summary": "Chương trình hành động quốc gia vì trẻ em, bảo vệ trẻ em khỏi các mối nguy trên không gian mạng bao gồm bắt nạt trực tuyến, xâm hại, nội dung độc hại.",
+    "keyPoints": [
+      "Phòng chống bắt nạt trực tuyến (cyberbullying)",
+      "Ngăn chặn xâm hại tình dục trẻ em trên mạng",
+      "Bộ lọc nội dung độc hại cho trẻ em",
+      "Tổng đài bảo vệ trẻ em: 111"
+    ],
+    "link": "https://vncert.vn",
+    "badge": "Hành động Vì Trẻ em"
+  },
+  {
+    "id": "tin-nhiem-mang",
+    "title": "Chương trình Tín Nhiệm Mạng",
+    "organizer": "Trung tâm Giám sát an toàn Không gian mạng Quốc gia (NCSC)",
+    "year": 2023,
+    "status": "active",
+    "icon": "✅",
+    "summary": "Chương trình đánh giá, chứng nhận và gắn nhãn tín nhiệm cho các website, ứng dụng tại Việt Nam nhằm giúp người dùng nhận biết các nền tảng số đáng tin cậy.",
+    "keyPoints": [
+      "Nhãn Tín Nhiệm Mạng cho website & ứng dụng di động",
+      "Tiêu chuẩn đánh giá an toàn thông tin đa tầng",
+      "Tra cứu mức độ tín nhiệm website tại tinnhiemmang.vn",
+      "Hỗ trợ tổ chức nâng cấp hệ thống đạt tiêu chuẩn"
+    ],
+    "link": "https://tinnhiemmang.vn",
+    "badge": "Tín Nhiệm Số"
+  },
+  {
+    "id": "de-an-06-chuyen-doi-so",
+    "title": "Đề án 06 – Chuyển đổi Số Quốc gia & Định danh Điện tử",
+    "organizer": "Chính phủ Việt Nam - Bộ Công An",
+    "year": 2022,
+    "status": "active",
+    "icon": "📱",
+    "summary": "Đề án phát triển ứng dụng dữ liệu dân cư, định danh và xác thực điện tử phục vụ chuyển đổi số quốc gia.",
+    "keyPoints": [
+      "Ứng dụng VNeID – định danh điện tử quốc gia",
+      "Cảnh báo giả mạo cán bộ hỗ trợ cài VNeID",
+      "Bảo vệ dữ liệu cá nhân trên hệ thống số",
+      "Chỉ tải VNeID từ App Store / Google Play chính thức"
+    ],
+    "link": "https://vneid.gov.vn",
+    "badge": "Đề án Chính phủ"
+  },
+  {
+    "id": "phong-chong-tin-gia",
+    "title": "Phòng chống Tin giả – Thông tin Sai lệch trên Mạng xã hội",
+    "organizer": "Bộ Thông tin và Truyền thông",
+    "year": 2024,
+    "status": "active",
+    "icon": "📰",
+    "summary": "Chiến dịch đấu tranh với tin giả, thông tin sai lệch trên mạng xã hội, tăng cường khả năng nhận biết và kiểm chứng thông tin của người dân.",
+    "keyPoints": [
+      "Nhận diện 10 dạng tin giả phổ biến nhất",
+      "Quy trình kiểm chứng thông tin 5 bước",
+      "Cổng thông tin Tingia.gov.vn",
+      "Trách nhiệm pháp lý khi chia sẻ tin giả"
+    ],
+    "link": "https://tingia.gov.vn",
+    "badge": "Chống Tin Giả"
+  }
+]

@@ -1,0 +1,1620 @@
+[
+  {
+    "id": "videocall-deepfake-family",
+    "type": "videocall",
+    "category": "videocall",
+    "title": "Video Call Deepfake giả em gái du học mượn tiền khẩn",
+    "difficulty": "hard",
+    "callerName": "Em Gái - Lan Hương (Du học sinh)",
+    "callerNumber": "+81 80 1234 5678 (Tokyo, Japan)",
+    "callerAvatar": "👧",
+    "duration": "00:45",
+    "description": "Cuộc gọi video call từ tài khoản Zalo/Messenger của em gái đang du học Nhật Bản. Khuôn mặt và giọng nói rất giống nhưng video hơi giật, hối thúc chuyển 35 triệu vì bị giữ hộ chiếu.",
+    "deepfakeClues": [
+      "Khẩu hình miệng giật lệch so với tiếng nói khi phát âm",
+      "Khuôn mặt có viền mờ nhấp nháy rung giật khi quay đầu",
+      "Ánh mắt đơ cứng, không chớp mắt tự nhiên",
+      "Khi yêu cầu đưa tay vẫy trước mặt, hình ảnh bị vỡ hạt và biến dạng",
+      "Giục chuyển tiền gấp rồi viện cớ sóng yếu để tắt máy sớm"
+    ],
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "glitch",
+        "hint": "Video giật lag & Lệch khẩu hình miệng",
+        "explanation": "Deepfake thời gian thực xử lý qua phần mềm hoán đổi khuôn mặt (Face Swap) ngốn nhiều tài nguyên xử lý, dẫn đến khẩu hình miệng giật lệch so với âm thanh và các viền mặt bị rung nhòe."
+      },
+      {
+        "id": "rf2",
+        "element": "excuse",
+        "hint": "Viện cớ mạng yếu để tắt máy sớm",
+        "explanation": "Kẻ gian chỉ gọi video 5 - 15 giây để nạn nhân thấy mặt rồi vội vàng cúp máy với lý do 'sóng yếu', sau đó chuyển sang nhắn tin hối thúc chuyển tiền nhằm tránh bị lộ thêm sơ hở."
+      },
+      {
+        "id": "rf3",
+        "element": "account",
+        "hint": "Tài khoản nhận tiền mang tên người lạ",
+        "explanation": "Đối tượng viện cớ 'tài khoản của em đang bị lỗi/bị khóa thẻ' nên yêu cầu chuyển vào số tài khoản của 'bạn' hoặc 'chủ nhà trọ' - thực chất là tài khoản ngân hàng rác của đường dây lừa đảo."
+      },
+      {
+        "id": "rf4",
+        "element": "urgency",
+        "hint": "Áp lực tâm lý khẩn cấp cực độ",
+        "explanation": "Tạo dựng kịch bản nghiêm trọng (bị giữ hộ chiếu, sắp bị cảnh sát bắt trục xuất, tai nạn) để người thân hoảng loạn chuyển tiền ngay mà không kịp gọi điện kiểm chứng chéo."
+      }
+    ],
+    "totalFlags": 4,
+    "advice": "Khi nhận video call mượn tiền gấp từ người thân: 1. Đặt câu hỏi bí mật riêng chỉ gia đình biết; 2. Yêu cầu người gọi giơ tay vẫy trước mặt hoặc quay camera quanh phòng; 3. CÚP MÁY và gọi lại bằng số điện thoại viễn thông thông thường.",
+    "branchingTree": {
+      "startNode": "vdf_intro",
+      "totalOutcomes": 4,
+      "nodes": {
+        "vdf_intro": {
+          "id": "vdf_intro",
+          "speaker": "caller",
+          "speakerName": "Em Gái (Deepfake AI)",
+          "text": "Alo anh ơi! Cứu em với, em đang ở sân bay Narita bị hải quan giữ giấy tờ do trục trặc visa. Pin máy em còn 2% thôi, anh chuyển gấp giúp em 35 triệu vào số tài khoản bạn em ở đây để nộp phạt xuất cảnh với!",
+          "videoState": "glitch_active",
+          "subtitle": "Khuôn mặt giống em gái 95%, nhưng viền cổ áo bị rung nhấp nháy, khẩu hình miệng phát âm lệch 0.2 giây so với tiếng.",
+          "nextNode": "vdf_c1"
+        },
+        "vdf_c1": {
+          "id": "vdf_c1",
+          "speaker": "user_choice",
+          "question": "Bạn thấy video call hình ảnh em gái giật lag, hối thúc chuyển 35 triệu gấp. Bạn phản ứng ra sao?",
+          "options": [
+            {
+              "id": "opt_panic_pay",
+              "text": "💸 Lo cho em gái, xin ngay số tài khoản và chuyển khoản 35 triệu tức thì",
+              "type": "danger",
+              "nextNode": "vdf_outcome_trap"
+            },
+            {
+              "id": "opt_wave_hand",
+              "text": "🤔 Thấy hình giật bất thường: 'Em giơ bàn tay vẫy trước mặt và quay camera 1 vòng xem nào!'",
+              "type": "probe",
+              "nextNode": "vdf_probe_wave"
+            },
+            {
+              "id": "opt_secret_question",
+              "text": "🔑 Hỏi mật mã gia đình: 'Nhà mình con cún bố đón về tên gì em nhớ không?'",
+              "type": "probe",
+              "nextNode": "vdf_probe_password"
+            },
+            {
+              "id": "opt_hangup_call",
+              "text": "🚫 Cúp máy ngay: 'Chờ đấy, anh cúp máy gọi lại trực tiếp vào số di động Nhật của em!'",
+              "type": "safe",
+              "nextNode": "vdf_outcome_safe"
+            }
+          ]
+        },
+        "vdf_probe_wave": {
+          "id": "vdf_probe_wave",
+          "speaker": "caller",
+          "speakerName": "Em Gái (Deepfake AI)",
+          "text": "(Đối tượng miễn cưỡng giơ tay lên vẫy... Bàn tay lướt qua mặt lập tức làm vỡ thuật toán Deepfake, khuôn mặt bị méo mó, biến dạng dị thường! Đối tượng cáu gắt quát to): 'Anh buồn cười thế, em sắp bị tống giam mà anh còn bảo em múa máy cái gì! Chuyển tiền nhanh lên không hết pin bây giờ!'",
+          "videoState": "face_landmark_broken",
+          "subtitle": "Bàn tay đè lên mặt làm vỡ thuật toán Face Swap AI, lộ rõ lỗi xé hình và phôi mặt thật của kẻ gian!",
+          "nextNode": "vdf_c2"
+        },
+        "vdf_c2": {
+          "id": "vdf_c2",
+          "speaker": "user_choice",
+          "question": "Khi thấy mặt bị méo mó lộ lỗi Deepfake và đối tượng quát tháo hối thúc, bạn làm gì tiếp theo?",
+          "options": [
+            {
+              "id": "opt_bust_scam",
+              "text": "🚨 Lật tẩy: 'Deepfake vỡ nát mặt rồi con lừa đảo, tao báo Công an ngay bây giờ!' rồi cúp máy",
+              "type": "probe",
+              "nextNode": "vdf_outcome_exposed"
+            },
+            {
+              "id": "opt_partial_pay",
+              "text": "😰 Nghe giọng em quát sợ em gặp nạn thật, thôi thì chuyển tạm 10 triệu trước cho yên tâm",
+              "type": "danger",
+              "nextNode": "vdf_outcome_partial"
+            }
+          ]
+        },
+        "vdf_probe_password": {
+          "id": "vdf_probe_password",
+          "speaker": "caller",
+          "speakerName": "Em Gái (Deepfake AI)",
+          "text": "(Đối tượng khựng lại 3 giây, mắt đảo liên tục, ấp úng): 'Ơ... anh đùa em à? Giờ này ai rảnh nhớ chuyện con cún! Sóng yếu quá... STK bạn em là 1028374829 Vietcombank tên NGUYEN VAN HUNG nhé, chuyển ngay đi em tắt máy đây!'",
+          "videoState": "freeze",
+          "subtitle": "Kẻ gian hoàn toàn không biết thông tin riêng tư gia đình, vội vàng tắt camera để né tránh câu hỏi.",
+          "nextNode": "vdf_outcome_password_win"
+        },
+        "vdf_outcome_trap": {
+          "id": "vdf_outcome_trap",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 SẬP BẪY DEEPFAKE - MẤT TRẮNG 35 TRIỆU ĐỒNG",
+          "badgeClass": "badge-danger",
+          "impact": "Tổn thất 35.000.000 VNĐ. Sau khi nhận tiền, kẻ gian lập tức khóa tài khoản Zalo/Facebook và xóa sạch mọi tin nhắn. Khi bạn gọi điện cho em gái thật thì em đang ở ký túc xá ngủ và không hề hay biết gì.",
+          "lessons": [
+            "Công nghệ Deepfake thời gian thực cho phép tin tặc giả dạng khuôn mặt và giọng nói của bất kỳ ai chỉ từ một vài video ngắn công khai trên TikTok/Facebook.",
+            "Tuyệt đối không chuyển tiền vào tài khoản người lạ dù thấy mặt người thân trên video call."
+          ],
+          "actions": [
+            "Lập tức liên hệ ngân hàng yêu cầu khóa tài khoản và đóng băng giao dịch 35 triệu.",
+            "Gọi lại số di động thật của em gái để xác nhận tình huống.",
+            "Trình báo Công an và nộp bằng chứng: lịch sử cuộc gọi, biên lai chuyển tiền.",
+            "Liên hệ tổng đài 156 phản ánh số điện thoại lừa đảo."
+          ],
+          "urgentActions": [
+            "Lập tức liên hệ ngân hàng yêu cầu phong tỏa giao dịch và khóa tài khoản nhận tiền.",
+            "Gọi điện trực tiếp xác nhận với em gái qua số điện thoại viễn thông thường dùng.",
+            "Trình báo Công an địa phương và giữ lại toàn bộ tin nhắn, lịch sử cuộc gọi làm bằng chứng."
+          ]
+        },
+        "vdf_outcome_partial": {
+          "id": "vdf_outcome_partial",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "⚠️ MẤT TIỀN DÙ ĐÃ PHÁT HIỆN DẤU HIỆU LỖI DEEPFAKE",
+          "badgeClass": "badge-warn",
+          "impact": "Tổn thất 10.000.000 VNĐ. Kẻ gian vừa nhận 10 triệu đã lập tức thúc ép: '10 triệu không đủ phí phạt, chuyển nốt 25 triệu nữa nhanh lên'. Khi bạn chần chừ thì bị đe dọa tiếp tục.",
+          "lessons": [
+            "Khi đã nhìn thấy dấu hiệu kỹ thuật bị lỗi (vỡ hạt khi vẫy tay), trực giác của bạn đã đúng.",
+            "Không bao giờ 'chuyển thử một ít vì thương tình' - kẻ lừa đảo sẽ vắt kiệt từng đồng tiết kiệm của bạn."
+          ],
+          "actions": [
+            "Lập tức khoá thẻ ngân hàng và đổi mật khẩu tài khoản liên quan.",
+            "Trình báo sự việc tới cơ quan Công an gần nhất hoặc gọi tổng đài 113.",
+            "Gọi Tổng đài 156 để phản ánh cuộc gọi / tin nhắn lừa đảo.",
+            "Lưu lại bằng chứng: ảnh chụp màn hình, tin nhắn, lịch sử giao dịch."
+          ],
+          "urgentActions": [
+            "Lập tức liên hệ ngân hàng phong tỏa giao dịch 10 triệu VNĐ vừa chuyển.",
+            "Gọi lại em gái bằng số điện thoại viễn thông quen thuộc để xác minh.",
+            "Giữ lại toàn bộ bằng chứng (screenshot, lịch sử cuộc gọi) và trình báo Công an."
+          ]
+        },
+        "vdf_outcome_exposed": {
+          "id": "vdf_outcome_exposed",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 LẬT TẨY KẺ GIAN & BẢO VỆ TOÀN VẸN TÀI SẢN",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ thành công 35.000.000 VNĐ. Thu thập được hình ảnh lỗi Deepfake và số tài khoản ngân hàng kẻ lừa đảo để gửi báo cáo phản ánh lên tổng đài 156 và cổng canhbao.khonggianmang.vn.",
+          "lessons": [
+            "Bí kíp vàng phòng chống Video Call Deepfake: Yêu cầu đối tượng giơ bàn tay vẫy qua lại trước mặt hoặc quay góc nghiêng 90 độ. Các mô hình hoán đổi khuôn mặt AI hiện nay rất kém trong việc xử lý che khuất (occlusion).",
+            "Sau khi cúp máy, ngay lập tức thông báo cho gia đình và bạn bè biết nick người thân đã bị chiếm quyền kiểm soát."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Chặn ngay số điện thoại/tài khoản mạng xã hội của đối tượng.",
+            "Trình báo sự việc lên Công an và đường dây nóng 156.",
+            "Cảnh báo gia đình và bạn bè về thủ đoạn Deepfake mới."
+          ]
+        },
+        "vdf_outcome_password_win": {
+          "id": "vdf_outcome_password_win",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ VŨ KHÍ 'MẬT KHẨ GIA ĐÌNH' - PHÒNG THỦ TUYỆT ĐỐI",
+          "badgeClass": "badge-safe",
+          "impact": "Bảo vệ an toàn 100% tài chính và danh tính. Kẻ gian bị 'khóa họng' hoàn toàn trước câu hỏi bảo mật riêng tư và tự phải cúp máy tháo chạy.",
+          "lessons": [
+            "Công nghệ AI có thể bắt chước khuôn mặt và giọng nói, nhưng KHÔNG THỂ biết được những ký ức, kỷ niệm hay quy ước mật mã nội bộ của gia đình bạn.",
+            "Hãy chủ động quy ước một câu hỏi/mật khẩu khẩn cấp giữa các thành viên trong gia đình ngay hôm nay!"
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Tiếp tục cảnh giác, kiểm tra lại bảo mật tài khoản mạng xã hội của người thân.",
+            "Chia sẻ kinh nghiệm nhận diện Deepfake cho gia đình.",
+            "Bật xác thực 2 lớp (2FA) cho tất cả tài khoản."
+          ]
+        },
+        "vdf_outcome_safe": {
+          "id": "vdf_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ NGUYÊN TẮC 'CHẬM LẠI 1 NHỊP' - BẢO VỆ HOÀN HẢO",
+          "badgeClass": "badge-safe",
+          "impact": "Không mất tiền, không bị kẻ xấu dắt mũi tâm lý. Khi gọi lại số di động của em gái, bạn đã kịp thời giúp em phát hiện tài khoản Zalo bị hack để thông báo cho mọi người cảnh giác.",
+          "lessons": [
+            "Luôn chủ động xác minh bằng một kênh độc lập thứ hai (gọi điện thoại viễn thông, gọi video qua nền tảng khác, hoặc gọi cho bạn bè cùng phòng).",
+            "Bất kỳ yêu cầu tài chính nào qua mạng xã hội đều cần được đối chiếu kiểm tra thực tế."
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Kiểm tra lại cuộc gọi bằng cách gọi trực tiếp qua số di động thường dùng.",
+            "Thông báo cho gia đình về cuộc gọi đáng ngờ vừa nhận.",
+            "Phản ánh số điện thoại lừa đảo tới đầu số 156."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "videocall-deepfake-police",
+    "type": "videocall",
+    "category": "videocall",
+    "title": "Video Call Deepfake cán bộ điều tra ép quét CCCD sinh trắc học",
+    "difficulty": "hard",
+    "callerName": "TRUNG TÁ VŨ VĂN BÌNH - C02 BỘ CÔNG AN",
+    "callerNumber": "+84 24 6699 0113 (Hà Nội)",
+    "callerAvatar": "👮",
+    "duration": "01:15",
+    "description": "Cuộc gọi video Zalo xuất hiện phông nền phòng làm việc cơ quan điều tra, đối tượng mặc sắc phục cảnh sát, yêu cầu quay camera quét mặt và giơ thẻ CCCD 2 mặt để 'giám định sinh trắc học án ma túy'.",
+    "deepfakeClues": [
+      "Phông nền phía sau là ảnh tĩnh hội trường công an cắt ghép trên phông xanh",
+      "Quân phục có ve hàm, phù hiệu gắn ngược sai điều lệnh Công an nhân dân",
+      "Gương mặt đối tượng cử động đơ cứng, mắt nhìn chằm chằm thiếu tự nhiên",
+      "Yêu cầu xuất trình thẻ CCCD và quay video cận mặt qua Zalo trái quy định pháp luật"
+    ],
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "police_video",
+        "hint": "Công an gọi video call làm việc",
+        "explanation": "Bộ Công an khẳng định KHÔNG BAO GIỜ gọi video call qua Zalo, Messenger để làm việc, lấy lời khai hay tống đạt văn bản tố tụng với công dân."
+      },
+      {
+        "id": "rf2",
+        "element": "scan_cccd",
+        "hint": "Yêu cầu giơ CCCD và quay quét khuôn mặt",
+        "explanation": "Kẻ gian lừa bạn giơ CCCD 2 mặt và quay video góc mặt cử động để thu thập dữ liệu định danh sinh trắc học, từ đó âm thầm mở tài khoản ngân hàng trực tuyến hoặc vay tiền app nợ xấu mang tên bạn."
+      },
+      {
+        "id": "rf3",
+        "element": "fake_background",
+        "hint": "Phông nền cơ quan công quyền cắt ghép",
+        "explanation": "Đối tượng dùng phông xanh (greenscreen) ghép ảnh hội trường, cờ búa liềm, cờ Tổ quốc hoặc clip dựng sẵn trên màn hình vi tính để tạo vẻ uy nghiêm lừa người dân."
+      }
+    ],
+    "totalFlags": 3,
+    "advice": "Cơ quan Công an chỉ làm việc trực tiếp tại trụ sở Công an phường/xã hoặc gửi giấy triệu tập bằng văn bản. Tuyệt đối không gọi video call và không giơ thẻ CCCD trước ống kính camera cho người lạ.",
+    "branchingTree": {
+      "startNode": "vdp_intro",
+      "totalOutcomes": 3,
+      "nodes": {
+        "vdp_intro": {
+          "id": "vdp_intro",
+          "speaker": "caller",
+          "speakerName": "Trung tá Công An (Giả Mạo)",
+          "text": "Tôi là Trung tá Vũ Văn Bình, điều tra viên Cục C02 Bộ Công An. Chúng tôi đang thực hiện lệnh khám xét và giám định tài khoản liên quan đường dây buôn ma túy 50 tỷ. Yêu cầu công dân cầm thẻ CCCD giơ trước camera, quay mặt sang trái, sang phải để máy chủ Bộ đối soát sinh trắc học!",
+          "videoState": "police_studio",
+          "subtitle": "Đối tượng mặc cảnh phục cảnh sát ngồi nghiêm nghị, nhưng góc mép áo bị nhòe vào phông nền phía sau do ghép phông xanh.",
+          "nextNode": "vdp_c1"
+        },
+        "vdp_c1": {
+          "id": "vdp_c1",
+          "speaker": "user_choice",
+          "question": "Trước lời đe dọa nghiêm nghị của người tự xưng Trung tá công an qua video call, bạn xử lý thế nào?",
+          "options": [
+            {
+              "id": "opt_show_cccd",
+              "text": "🪪 Sợ bị bắt oan, lấy ngay CCCD giơ lên trước camera và làm theo hướng dẫn quay mặt",
+              "type": "danger",
+              "nextNode": "vdp_outcome_identity_stolen"
+            },
+            {
+              "id": "opt_demand_summons",
+              "text": "📜 Kiên quyết: 'Đề nghị gửi giấy triệu tập về Công an phường nơi tôi ở, công an không làm việc qua Zalo!'",
+              "type": "safe",
+              "nextNode": "vdp_outcome_safe"
+            },
+            {
+              "id": "opt_ask_station",
+              "text": "🏛️ Thử thách: 'Cán bộ cho tôi xin số máy bàn trực ban cơ quan và số thẻ ngành để tôi xác minh!'",
+              "type": "probe",
+              "nextNode": "vdp_probe_badge"
+            }
+          ]
+        },
+        "vdp_probe_badge": {
+          "id": "vdp_probe_badge",
+          "speaker": "caller",
+          "speakerName": "Trung tá Công An (Giả Mạo)",
+          "text": "(Đối tượng đập bàn, quát lớn đầy đe dọa): 'Anh dám chất vấn điều tra viên à? Anh đang có dấu hiệu ngoan cố, chống đối người thi hành công vụ! Nếu không hợp tác ngay, tôi phát lệnh truy nã và phong tỏa toàn bộ tài sản ngân hàng của anh trong 1 giờ nữa!'",
+          "videoState": "angry_glitch",
+          "subtitle": "Kẻ gian không dám cung cấp số điện thoại trực ban hay thông tin đơn vị, dùng chiêu bài đập bàn đe dọa để áp đảo tinh thần.",
+          "nextNode": "vdp_outcome_exposed"
+        },
+        "vdp_outcome_identity_stolen": {
+          "id": "vdp_outcome_identity_stolen",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 SẬP BẪY ĐÁNH CẮP SINH TRẮC HỌC & DANH TÍNH CÁ NHÂN",
+          "badgeClass": "badge-danger",
+          "impact": "Toàn bộ ảnh chụp 2 mặt CCCD và video cử động quay mặt sinh trắc học bị kẻ gian thu thập trọn vẹn. Chúng dùng dữ liệu này mở 5 tài khoản ngân hàng ảo rửa tiền và đăng ký vay 80 triệu đồng trên app tín dụng đen, khiến bạn trở thành con nợ xấu trên hệ thống CIC.",
+          "lessons": [
+            "Dữ liệu khuôn mặt cử động kết hợp ảnh CCCD 2 mặt chính là 'chìa khóa vàng' vượt qua xác thực eKYC ngân hàng hiện nay.",
+            "Tuyệt đối không bao giờ giơ CCCD hay quay khuôn mặt theo yêu cầu của bất kỳ ai qua cuộc gọi video trên mạng."
+          ],
+          "actions": [
+            "Đến cơ quan Công an khai báo CMND/CCCD đã bị lộ thông tin.",
+            "Liên hệ ngân hàng yêu cầu xác thực lại danh tính và đặt cảnh báo giao dịch.",
+            "Theo dõi tài khoản tín dụng và kiểm tra lịch sử vay mượn bất thường.",
+            "Thay đổi toàn bộ mật khẩu tài khoản sử dụng thông tin CCCD liên quan."
+          ],
+          "urgentActions": [
+            "Lập tức thay đổi mật khẩu tất cả tài khoản ngân hàng và ví điện tử.",
+            "Liên hệ Cục Cảnh sát điều tra an ninh mạng (Phòng PA05) báo cáo bị lộ CCCD.",
+            "Theo dõi sát mọi giao dịch tài chính và xem xét đóng băng tín dụng."
+          ]
+        },
+        "vdp_outcome_exposed": {
+          "id": "vdp_outcome_exposed",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 BẮT THÓP CHIÊU TRÒ ĐE DỌA - LẬT MẶT TỘI PHẠM",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ thành công danh tính và tài sản. Khi bạn yêu cầu xác minh thẻ ngành và số máy trực ban, kẻ gian lúng túng lộ rõ bản chất lừa đảo chuyên đe dọa bắt nạt tâm lý.",
+          "lessons": [
+            "Quy định ngành Công an: Cán bộ khi làm việc phải xuất trình giấy triệu tập hoặc giấy mời chính thức có dấu đỏ của thủ trưởng cơ quan điều tra.",
+            "Cơ quan Công an các cấp đều có số điện thoại đường dây nóng và số trực ban công khai, công dân có toàn quyền gọi xác minh."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Chặn ngay số điện thoại và tài khoản liên quan.",
+            "Trình báo sự việc lên Công an phường/xã nơi cư trú.",
+            "Chia sẻ thông tin cho cộng đồng để nâng cao cảnh giác."
+          ]
+        },
+        "vdp_outcome_safe": {
+          "id": "vdp_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ NẮM CHẮC PHÁP LUẬT - BỨC TƯỜNG PHÒNG THỦ VỮNG VÀNG",
+          "badgeClass": "badge-safe",
+          "impact": "An toàn tuyệt đối 100%. Kẻ gian nhận ra gặp người hiểu biết pháp luật nên tự động cúp máy bỏ cuộc.",
+          "lessons": [
+            "Cơ quan Công an, Viện Kiểm sát, Tòa án KHÔNG BAO GIỜ làm việc qua mạng xã hội Zalo/Facebook.",
+            "Mọi vụ việc điều tra đều phải gửi văn bản triệu tập có chữ ký và đóng dấu mộc đỏ trực tiếp về Công an địa phương nơi công dân cư trú."
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Gọi trực tiếp tới tổng đài Công an (113) để xác minh nếu còn nghi ngờ.",
+            "Thông báo cho gia đình về chiêu trò mạo danh Công an.",
+            "Bật xác thực sinh trắc học cho các ứng dụng ngân hàng."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "call-police-scam",
+    "type": "call",
+    "category": "call",
+    "title": "Cuộc gọi giả danh Công an điều tra rửa tiền",
+    "difficulty": "hard",
+    "callerName": "CÁN BỘ ĐIỀU TRA - BỘ CÔNG AN",
+    "callerNumber": "+84 24 9999 113",
+    "callerAvatar": "👮‍♂️",
+    "duration": "02:15",
+    "description": "Kẻ xấu mạo danh cán bộ điều tra thông báo bạn liên quan đường dây rửa tiền ma túy quốc tế, đe dọa tạm giam và ép chuyển tiền giám định.",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "authority",
+        "hint": "Làm việc qua điện thoại",
+        "explanation": "Cơ quan Công an, Viện Kiểm sát, Tòa án KHÔNG BAO GIỜ gọi điện làm việc, thẩm vấn hay thông báo lệnh bắt qua điện thoại. Mọi quy trình đều bằng văn bản giấy mời/triệu tập có đóng dấu."
+      },
+      {
+        "id": "rf2",
+        "element": "transfer",
+        "hint": "Yêu cầu chuyển tiền vào tài khoản an toàn",
+        "explanation": "KHÔNG CÓ CƠ QUAN NÀO có cái gọi là 'Tài khoản an toàn' hay 'Tài khoản tạm giữ của Viện kiểm sát' mang tên cá nhân để người dân chuyển tiền vào giám định."
+      },
+      {
+        "id": "rf3",
+        "element": "threat",
+        "hint": "Đe dọa bắt giữ & Yêu cầu bảo mật tuyệt đối",
+        "explanation": "Kẻ lừa đảo dùng thủ đoạn đe dọa 'tù tội', 'bắt khẩn cấp' và yêu cầu 'không được kể cho người thân/ngân hàng' nhằm cô lập nạn nhân không kịp tỉnh táo kiểm chứng."
+      },
+      {
+        "id": "rf4",
+        "element": "caller_id",
+        "hint": "Số điện thoại giả mạo (+84 24 9999 113)",
+        "explanation": "Các đối tượng sử dụng công nghệ VoIP / Voice Spoofing để hiển thị số gần giống tổng đài cơ quan nhà nước, thêm các số đuôi 113, 115 để tạo lòng tin giả mạo."
+      }
+    ],
+    "totalFlags": 4,
+    "advice": "Khi gặp cuộc gọi xưng danh Công an đe dọa điều tra: 1. Tuyệt đối KHÔNG lo sợ; 2. CÚP MÁY NGAY; 3. Không chuyển tiền hay cung cấp bất kỳ thông tin nào; 4. Báo ngay cho Công an phường/xã gần nhất hoặc gọi tổng đài 156.",
+    "branchingTree": {
+      "startNode": "cps_intro",
+      "totalOutcomes": 3,
+      "nodes": {
+        "cps_intro": {
+          "id": "cps_intro",
+          "speaker": "caller",
+          "speakerName": "Đại Úy Trần Quốc Tuấn",
+          "text": "Alo! Tôi là Đại úy Trần Quốc Tuấn, Cục Cảnh sát Hình sự Bộ Công An. Chúng tôi đang thụ lý đường dây rửa tiền ma túy 50 tỷ đồng. Chủ tài khoản ngân hàng của anh/chị đang có Lệnh bắt tạm giam của Viện kiểm sát tối cao!",
+          "nextNode": "cps_c1"
+        },
+        "cps_c1": {
+          "id": "cps_c1",
+          "speaker": "user_choice",
+          "question": "Bạn nghe thấy thông báo lệnh bắt tạm giam qua điện thoại, bạn sẽ trả lời đối tượng ra sao?",
+          "options": [
+            {
+              "id": "opt_panic",
+              "text": "😰 'Trời ơi tôi có làm gì đâu cán bộ! Làm sao để chứng minh tôi trong sạch?'",
+              "type": "danger",
+              "nextNode": "cps_threat"
+            },
+            {
+              "id": "opt_calm_legal",
+              "text": "📜 'Công an không làm việc qua điện thoại. Đề nghị gửi giấy triệu tập về công an phường nơi tôi ở!'",
+              "type": "safe",
+              "nextNode": "cps_outcome_safe"
+            },
+            {
+              "id": "opt_ask_detail",
+              "text": "🔍 'Cán bộ đang công tác ở phòng ban nào? Cho tôi xin số trực ban để tôi gọi lại!'",
+              "type": "probe",
+              "nextNode": "cps_probe"
+            }
+          ]
+        },
+        "cps_threat": {
+          "id": "cps_threat",
+          "speaker": "caller",
+          "speakerName": "Đại Úy Trần Quốc Tuấn",
+          "text": "Đây là án tuyệt mật quốc gia! Nếu anh tiết lộ cho người nhà sẽ bị xử lý thêm tội tiết lộ bí mật nhà nước. Bây giờ rút toàn bộ sổ tiết kiệm chuyển ngay vào 'Tài khoản an toàn của Viện Kiểm sát' để giám định tài sản sạch!",
+          "nextNode": "cps_c2"
+        },
+        "cps_c2": {
+          "id": "cps_c2",
+          "speaker": "user_choice",
+          "question": "Đối tượng yêu cầu chuyển toàn bộ tiền tiết kiệm vào tài khoản bảo vệ trước 11h trưa. Bạn làm gì?",
+          "options": [
+            {
+              "id": "opt_transfer_save",
+              "text": "💸 Vội vã ra ngân hàng rút 50 triệu chuyển vào số tài khoản kẻ gian chỉ định",
+              "type": "danger",
+              "nextNode": "cps_outcome_trap"
+            },
+            {
+              "id": "opt_realize_scam",
+              "text": "🛑 Nhớ ra lời cảnh báo của Bộ Công An: 'Làm gì có tài khoản an toàn!' và cúp máy",
+              "type": "safe",
+              "nextNode": "cps_outcome_realized"
+            }
+          ]
+        },
+        "cps_probe": {
+          "id": "cps_probe",
+          "speaker": "caller",
+          "speakerName": "Đại Úy Trần Quốc Tuấn",
+          "text": "(Gắt gỏng): 'Tôi là cán bộ điều tra đang chấp hành công vụ, anh không có quyền kiểm tra tôi! Nếu không nộp tiền bảo lãnh tài sản ngay thì xe thùng sẽ đến tận nhà bắt giải đi!'",
+          "nextNode": "cps_outcome_realized"
+        },
+        "cps_outcome_trap": {
+          "id": "cps_outcome_trap",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 SẬP BẪY MẠO DANH CÔNG AN - MẤT TRẮNG 50 TRIỆU ĐỒNG",
+          "badgeClass": "badge-danger",
+          "impact": "Tổn thất 50.000.000 VNĐ. Tiền vừa chuyển vào tài khoản kẻ gian lập tức bị chia nhỏ và chuyển qua hàng chục tài khoản trung gian rồi rút ra tiền mặt tại nước ngoài.",
+          "lessons": [
+            "Không cơ quan công quyền nào yêu cầu chuyển tiền vào tài khoản cá nhân để 'giám định trong sạch'.",
+            "Mọi lệnh bắt đều phải có đại diện Viện kiểm sát và chính quyền địa phương tống đạt trực tiếp tại nhà."
+          ],
+          "actions": [
+            "Liên hệ ngân hàng khóa tài khoản khẩn cấp, yêu cầu hoàn tiền giao dịch.",
+            "Đến trực tiếp cơ quan Công an trình báo - KHÔNG gọi qua số đối tượng cung cấp.",
+            "Lưu lại mọi bằng chứng: ghi âm cuộc gọi, tin nhắn, lịch sử giao dịch.",
+            "Cảnh báo gia đình không cung cấp thêm thông tin nếu đối tượng gọi lại."
+          ],
+          "urgentActions": [
+            "Ngay lập tức liên hệ ngân hàng để phong tỏa tài khoản.",
+            "Trình báo Công an phường/xã gần nhất và cung cấp mọi chi tiết cuộc gọi.",
+            "Thay đổi mật khẩu ngân hàng điện tử và bật xác thực 2 lớp."
+          ]
+        },
+        "cps_outcome_realized": {
+          "id": "cps_outcome_realized",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 KỊP THỜI TỈNH TÁO - THOÁT BẪY ĐE DỌA TÂM LÝ",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ an toàn 50.000.000 VNĐ. Sau khi cúp máy, bạn đến Công an phường hỏi và được các chiến sĩ công an khẳng định đây là chiêu trò lừa đảo qua mạng.",
+          "lessons": [
+            "Sự hung hãn, gắt gỏng và đe dọa thời hạn gấp chính là dấu hiệu kinh điển của kẻ lừa đảo khi bị nạn nhân hỏi ngược lại thông tin pháp lý."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Chặn số điện thoại của đối tượng.",
+            "Phản ánh cuộc gọi lừa đảo tới đầu số 156.",
+            "Thông báo cho người thân về chiêu trò giả danh Công an."
+          ]
+        },
+        "cps_outcome_safe": {
+          "id": "cps_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ BẢN LĨNH PHÒNG VỆ SỐ XUẤT SẮC - ĐÚNG CHUẨN PHÁP LUẬT",
+          "badgeClass": "badge-safe",
+          "impact": "An toàn 100%. Kẻ gian tự biết không thể lừa được người am hiểu quy trình tố tụng nên tự cúp máy ngay.",
+          "lessons": [
+            "Công an nhân dân làm việc đúng quy định, có văn bản tống đạt, có giấy triệu tập gửi qua công an địa phương. Khắc cốt ghi tâm nguyên tắc này thì không kẻ gian nào lừa được bạn!"
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Gọi 113 để xác minh nếu vẫn lo lắng.",
+            "Cảnh báo bạn bè, người thân về thủ đoạn giả danh Công an.",
+            "Chặn và báo cáo số điện thoại đáng ngờ."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "call-telecom-lock",
+    "type": "call",
+    "category": "call",
+    "title": "Cuộc gọi dọa khóa SIM thuê bao sau 2 giờ",
+    "difficulty": "medium",
+    "callerName": "TỔNG ĐÀI CỤC VIỄN THÔNG - BỘ TTTT",
+    "callerNumber": "+84 28 8888 0156",
+    "callerAvatar": "📡",
+    "duration": "01:40",
+    "description": "Cuộc gọi ghi âm tự động giả mạo nhà mạng/Cục Viễn thông thông báo SIM chưa chuẩn hóa sẽ bị khóa sau 2h, yêu cầu bấm phím để được hỗ trợ.",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "robocall",
+        "hint": "Cuộc gọi ghi âm tự động dọa khóa SIM",
+        "explanation": "Cục Viễn thông và các nhà mạng khẳng định KHÔNG BAO GIỜ gọi điện tự động thông báo khóa thuê bao sau 2 giờ. Mọi thông báo chuẩn hóa đều qua SMS Brandname chính thức và có lộ trình nhiều ngày."
+      },
+      {
+        "id": "rf2",
+        "element": "otp",
+        "hint": "Yêu cầu đọc mã OTP & số CCCD",
+        "explanation": "Nhân viên nhà mạng KHÔNG BAO GIỜ yêu cầu khách hàng đọc mã OTP. Nếu bạn đọc OTP, kẻ gian sẽ đổi eSIM hoặc chiếm đoạt tài khoản VNeID, ngân hàng liên kết."
+      },
+      {
+        "id": "rf3",
+        "element": "deadline",
+        "hint": "Áp lực thời gian 'sau 2 giờ'",
+        "explanation": "Tạo áp lực khẩn cấp khiến nạn nhân không kịp suy nghĩ hoặc hỏi ý kiến người am hiểu công nghệ."
+      }
+    ],
+    "totalFlags": 3,
+    "advice": "Nhà mạng chỉ nhắn tin SMS Brandname thông báo chuẩn hóa. Muốn kiểm tra SIM chính chủ: soạn TTTB gửi 1414 (hoàn toàn miễn phí).",
+    "branchingTree": {
+      "startNode": "ctl_intro",
+      "totalOutcomes": 3,
+      "nodes": {
+        "ctl_intro": {
+          "id": "ctl_intro",
+          "speaker": "caller",
+          "speakerName": "Tổng Đài Cục Viễn Thông (Tự Động)",
+          "text": "Đây là thông báo tự động từ Cục Viễn thông - Bộ Thông tin và Truyền thông. Số thuê bao của quý khách chưa chuẩn hóa thông tin cá nhân và sẽ bị khóa vĩnh viễn sau 2 giờ. Bấm phím 1 để kết nối tổng đài viên hỗ trợ chuẩn hóa ngay lập tức.",
+          "nextNode": "ctl_c1"
+        },
+        "ctl_c1": {
+          "id": "ctl_c1",
+          "speaker": "user_choice",
+          "question": "Bạn nghe thấy thông báo dọa khóa SIM tự động sau 2 giờ, bạn sẽ xử lý thế nào?",
+          "options": [
+            {
+              "id": "opt_press_1",
+              "text": "📞 Bấm phím 1 theo hướng dẫn để gặp 'nhân viên Cục Viễn thông' hỏi cho rõ",
+              "type": "danger",
+              "nextNode": "ctl_agent"
+            },
+            {
+              "id": "opt_hangup_1414",
+              "text": "📱 Cúp máy ngay, tự soạn tin nhắn TTTB gửi 1414 để kiểm tra chính chủ",
+              "type": "safe",
+              "nextNode": "ctl_outcome_safe"
+            },
+            {
+              "id": "opt_probe_caller",
+              "text": "❓ Bấm phím 1 và hỏi: 'Tại sao Cục Viễn thông lại dùng số di động lạ gọi dọa khóa SIM?'",
+              "type": "probe",
+              "nextNode": "ctl_probe"
+            }
+          ]
+        },
+        "ctl_agent": {
+          "id": "ctl_agent",
+          "speaker": "caller",
+          "speakerName": "Nhân Viên Cục Viễn Thông (Giả Mạo)",
+          "text": "Chào anh/chị, em là nhân viên tiếp nhận hồ sơ Cục Viễn thông. Để kịp thời chuẩn hóa và không bị cắt liên lạc sau 2h, em vừa gửi mã xác thực 6 số về máy anh/chị. Vui lòng đọc mã OTP và số CCCD để em cập nhật trên hệ thống!",
+          "nextNode": "ctl_c2"
+        },
+        "ctl_c2": {
+          "id": "ctl_c2",
+          "speaker": "user_choice",
+          "question": "Đối tượng yêu cầu bạn đọc mã OTP gửi về máy cùng số CCCD. Bạn làm gì?",
+          "options": [
+            {
+              "id": "opt_give_otp",
+              "text": "🔓 Đọc ngay mã OTP 6 số và số CCCD cho đối tượng để tránh bị khóa SIM",
+              "type": "danger",
+              "nextNode": "ctl_outcome_trap"
+            },
+            {
+              "id": "opt_refuse_otp",
+              "text": "🛑 Dừng lại ngay: 'Mã OTP này là để đổi eSIM/đăng nhập, tôi không đọc cho ai hết!'",
+              "type": "safe",
+              "nextNode": "ctl_outcome_probe"
+            }
+          ]
+        },
+        "ctl_probe": {
+          "id": "ctl_probe",
+          "speaker": "caller",
+          "speakerName": "Kẻ Lừa Đảo",
+          "text": "(Ngập ngừng rồi gắt gỏng): 'Hệ thống gọi ngẫu nhiên tự động mà anh! Anh không hợp tác cập nhật ngay thì tí nữa mất sóng đừng có kêu, nhà mạng sẽ đưa số anh vào danh sách đen!'",
+          "nextNode": "ctl_outcome_probe"
+        },
+        "ctl_outcome_trap": {
+          "id": "ctl_outcome_trap",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 BỊ CHIẾM ĐOẠT SIM & HACK TÀI KHOẢN NGÂN HÀNG",
+          "badgeClass": "badge-danger",
+          "impact": "Tổn thất 25.000.000 VNĐ. Có mã OTP, kẻ gian đã lập tức chuyển đổi SIM của bạn sang eSIM trên máy kẻ gian. Ngay sau khi SIM của bạn mất sóng, kẻ gian nhận OTP đặt lại mật khẩu Internet Banking và chuyển sạch tiền trong tài khoản.",
+          "lessons": [
+            "Cục Viễn thông và nhà mạng KHÔNG BAO GIỜ gọi điện tự động dọa khóa thuê bao sau 2 giờ.",
+            "Tuyệt đối KHÔNG BAO GIỜ đọc mã OTP gửi về điện thoại cho bất kỳ người lạ nào."
+          ],
+          "actions": [
+            "Gọi tổng đài nhà mạng chính thức (VinaPhone 18001091, Viettel 18008098, MobiFone 18001090) để kiểm tra.",
+            "Yêu cầu ngân hàng khóa dịch vụ Internet Banking và thẻ liên quan.",
+            "Trình báo Công an kèm số điện thoại giả mạo.",
+            "Đổi mật khẩu và kích hoạt xác thực 2 lớp cho tất cả tài khoản."
+          ],
+          "urgentActions": [
+            "Lập tức liên hệ nhà mạng qua tổng đài chính thức (18001166/18001091) để xác minh.",
+            "Nếu đã chia sẻ thông tin, đổi mật khẩu ngân hàng và bật 2FA.",
+            "Trình báo Công an và phản ánh qua đầu số 156."
+          ]
+        },
+        "ctl_outcome_probe": {
+          "id": "ctl_outcome_probe",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 LẬT TẨY CHIÊU TRÒ CƯỚP SIM TỐC HÀNH",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ an toàn SIM và toàn bộ tài khoản ngân hàng. Sau khi bạn từ chối cung cấp OTP và vặn hỏi pháp lý, kẻ gian tự cúp máy trong bực tức.",
+          "lessons": [
+            "Kẻ gian luôn tạo áp lực thời gian 'khóa SIM sau 2 giờ' để khiến nạn nhân hoảng hốt đọc OTP mà không kịp đọc nội dung cảnh báo trong tin nhắn OTP."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Chặn số điện thoại lừa đảo.",
+            "Xác minh lại thông tin SIM tại cửa hàng nhà mạng chính hãng.",
+            "Phản ánh cuộc gọi rác qua đầu số 156."
+          ]
+        },
+        "ctl_outcome_safe": {
+          "id": "ctl_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ PHÒNG VỆ CHUẨN XÁC - KIỂM CHỨNG QUA ĐẦU SỐ CHÍNH THỨC 1414",
+          "badgeClass": "badge-safe",
+          "impact": "An toàn 100%. Tin nhắn phản hồi từ 1414 xác nhận SIM của bạn đã đúng thông tin chính chủ CCCD. Bạn hoàn toàn yên tâm không bị khóa.",
+          "lessons": [
+            "Cú pháp kiểm tra SIM chính chủ miễn phí toàn quốc: Soạn TTTB gửi 1414."
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Phản ánh cuộc gọi giả mạo qua đầu số 156.",
+            "Thông báo cho gia đình về chiêu trò dọa khóa SIM.",
+            "Kiểm tra thông tin thuê bao qua ứng dụng chính thức của nhà mạng."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "call-relative-emergency",
+    "type": "call",
+    "category": "call",
+    "title": "Cuộc gọi báo người thân cấp cứu cần chuyển tiền gấp",
+    "difficulty": "hard",
+    "callerName": "BS. NGUYỄN VĂN DŨNG - BV CHỢ RẪY",
+    "callerNumber": "0912 345 678",
+    "callerAvatar": "🏥",
+    "duration": "01:30",
+    "description": "Kẻ xấu mạo danh bác sĩ/giáo viên thông báo con/người thân bị tai nạn giao thông chấn thương sọ não, đang cấp cứu cần chuyển tiền mổ gấp.",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "panic",
+        "hint": "Đánh vào tình mẫu tử / tâm lý hoảng loạn",
+        "explanation": "Kẻ lừa đảo tạo tình huống cấp bách liên quan tính mạng con cái để phụ huynh mất bình tĩnh, hành động theo bản năng mà không kịp kiểm chứng."
+      },
+      {
+        "id": "rf2",
+        "element": "private_acc",
+        "hint": "Chuyển tiền vào số tài khoản cá nhân",
+        "explanation": "Bệnh viện công lập có quy trình thu viện phí qua phòng Tài chính - Kế toán, có hóa đơn chứng từ, không bao giờ bắt chuyển tiền vào tài khoản cá nhân của bác sĩ."
+      },
+      {
+        "id": "rf3",
+        "element": "hospital_policy",
+        "hint": "Quy định cấp cứu của bệnh viện",
+        "explanation": "Tất cả các bệnh viện tại Việt Nam đều ưu tiên cấp cứu hồi sức giành giật sự sống cho người bệnh trước, thủ tục viện phí giải quyết sau."
+      }
+    ],
+    "totalFlags": 3,
+    "advice": "Khi nhận cuộc gọi con cấp cứu: Giữ bình tĩnh, KHÔNG chuyển tiền. Gọi ngay cho giáo viên chủ nhiệm, bảo vệ trường hoặc tổng đài bệnh viện để xác minh.",
+    "branchingTree": {
+      "startNode": "cre_intro",
+      "totalOutcomes": 3,
+      "nodes": {
+        "cre_intro": {
+          "id": "cre_intro",
+          "speaker": "caller",
+          "speakerName": "Bác Sĩ Dũng (Giả Mạo)",
+          "text": "Alo! Chị có phải là phụ huynh cháu Tuấn lớp 11A2 không? Tôi là Bác sĩ Nguyễn Văn Dũng, khoa Cấp cứu Chợ Rẫy. Cháu bị tai nạn giao thông rất nặng, đang tụ máu nội sọ, phải mổ khẩn cấp trong 30 phút nữa!",
+          "nextNode": "cre_c1"
+        },
+        "cre_c1": {
+          "id": "cre_c1",
+          "speaker": "user_choice",
+          "question": "Nghe tin con đang cấp cứu trong tình trạng thập tử nhất sinh, bạn phản ứng ra sao?",
+          "options": [
+            {
+              "id": "opt_panic_pay",
+              "text": "😰 Hoảng loạn khóc lóc: 'Trời ơi cứu con tôi với! Chuyển tiền vào đâu để bác sĩ mổ ngay?'",
+              "type": "danger",
+              "nextNode": "cre_transfer_demand"
+            },
+            {
+              "id": "opt_calm_check",
+              "text": "🏫 'Bệnh viện cứ cấp cứu cứu người trước theo quy định! Tôi gọi ngay cho cô giáo và tới viện liền!'",
+              "type": "safe",
+              "nextNode": "cre_outcome_safe"
+            },
+            {
+              "id": "opt_ask_detail",
+              "text": "🔍 'Bác sĩ đọc đúng ngày sinh, số CCCD và cô giáo đi cùng cho tôi kiểm tra ngay!'",
+              "type": "probe",
+              "nextNode": "cre_probe"
+            }
+          ]
+        },
+        "cre_transfer_demand": {
+          "id": "cre_transfer_demand",
+          "speaker": "caller",
+          "speakerName": "Bác Sĩ Dũng (Giả Mạo)",
+          "text": "Hiện viện phí tạm ứng là 45 triệu để mua vật tư mổ gấp. Tài khoản viện đang bị nghẽn mạng, chị chuyển gấp vào STK cá nhân của tôi là: NGUYEN VAN DUNG - MB Bank 0912345678 để tôi ký lệnh mổ ngay!",
+          "nextNode": "cre_c2"
+        },
+        "cre_c2": {
+          "id": "cre_c2",
+          "speaker": "user_choice",
+          "question": "Đối tượng yêu cầu chuyển ngay 45 triệu vào tài khoản cá nhân của bác sĩ. Bạn làm gì?",
+          "options": [
+            {
+              "id": "opt_transfer_now",
+              "text": "💸 Mở vội app ngân hàng chuyển ngay 45 triệu đồng vào STK cá nhân của 'bác sĩ'",
+              "type": "danger",
+              "nextNode": "cre_outcome_trap"
+            },
+            {
+              "id": "opt_remember_rule",
+              "text": "🛑 Dừng lại nghi vấn: 'Tại sao lại đóng viện phí vào tài khoản cá nhân?' và gọi thẳng hotline bệnh viện",
+              "type": "safe",
+              "nextNode": "cre_outcome_probe"
+            }
+          ]
+        },
+        "cre_probe": {
+          "id": "cre_probe",
+          "speaker": "caller",
+          "speakerName": "Bác Sĩ Dũng (Giả Mạo)",
+          "text": "(Hối thúc gấp gáp): 'Cháu được người đi đường chở vào, không ai đi cùng cả! Chị ở đó hỏi vòng vèo là con chị mất mạng đấy, chuyển tiền mổ ngay đi!'",
+          "nextNode": "cre_outcome_probe"
+        },
+        "cre_outcome_trap": {
+          "id": "cre_outcome_trap",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 SẬP BẪY TÂM LÝ 'CON CẤP CỨU' - MẤT TRẮNG 45 TRIỆU ĐỒNG",
+          "badgeClass": "badge-danger",
+          "impact": "Tổn thất 45.000.000 VNĐ. Sau khi chuyển tiền xong, bạn hốt hoảng chạy tới bệnh viện thì không có ca cấp cứu nào. Gọi cho nhà trường thì hay tin con bạn vẫn đang ngồi học an toàn trong lớp.",
+          "lessons": [
+            "Bệnh viện công lập tại Việt Nam luôn ưu tiên cấp cứu giành giật mạng sống bệnh nhân trước, không bao giờ vì chưa đóng viện phí mà từ chối cứu người.",
+            "Viện phí luôn thu tại quầy thu ngân có phiếu thu/hóa đơn, KHÔNG BAO GIỜ yêu cầu chuyển vào tài khoản cá nhân của bác sĩ."
+          ],
+          "actions": [
+            "Liên hệ ngân hàng yêu cầu đóng băng giao dịch khẩn cấp.",
+            "Gọi điện trực tiếp cho người thân bằng số điện thoại đã biết để xác minh.",
+            "Trình báo Công an khu vực, cung cấp thông tin cuộc gọi và tài khoản nhận tiền.",
+            "Gọi 156 phản ánh số điện thoại lừa đảo."
+          ],
+          "urgentActions": [
+            "Ngay lập tức liên hệ ngân hàng để phong tỏa giao dịch.",
+            "Gọi điện trực tiếp cho người thân qua số thường dùng để xác minh.",
+            "Trình báo Công an và giữ lại toàn bộ bằng chứng."
+          ]
+        },
+        "cre_outcome_probe": {
+          "id": "cre_outcome_probe",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 KỊP THỜI TỈNH TÁO TRƯỚC BẪY TÂM LÝ HIỂM ĐỘC",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ an toàn 45.000.000 VNĐ. Bạn yêu cầu xác minh qua hotline bệnh viện và báo công an, kẻ lừa đảo lập tức tắt máy.",
+          "lessons": [
+            "Đòn đánh tâm lý hiểm nhất của kẻ lừa đảo là kích hoạt trạng thái hoảng loạn của cha mẹ. Chỉ cần 1 phút hít sâu, giữ bình tĩnh kiểm chứng là bạn sẽ thấy rõ chân tướng."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Tiếp tục xác minh bằng cách liên hệ bệnh viện hoặc cơ quan liên quan.",
+            "Cảnh báo gia đình về cuộc gọi đáng ngờ.",
+            "Phản ánh qua đầu số 156."
+          ]
+        },
+        "cre_outcome_safe": {
+          "id": "cre_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ BẢN LĨNH PHÒNG VỆ SỐ TUYỆT VỜI - XÁC MINH ĐA KÊNH CHÍNH XÁC",
+          "badgeClass": "badge-safe",
+          "impact": "An toàn 100%. Cô giáo chủ nhiệm bắt máy và đưa điện thoại cho con bạn trực tiếp nói chuyện, dập tan hoàn toàn thủ đoạn lừa đảo.",
+          "lessons": [
+            "Quy tắc vàng khi có tin dữ: Giữ bình tĩnh - KHÔNG chuyển tiền - Kiểm chứng trực tiếp với nhà trường hoặc người thân."
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Gọi lại người thân qua số điện thoại quen thuộc.",
+            "Thông báo cho gia đình cùng cảnh giác.",
+            "Phản ánh cuộc gọi lừa đảo qua đầu số 156."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "call-bank-otp",
+    "type": "call",
+    "category": "call",
+    "title": "Cuộc gọi giả danh nhân viên ngân hàng hỗ trợ nâng hạn mức",
+    "difficulty": "medium",
+    "callerName": "TỔNG ĐÀI VIETCOMBANK CSKH",
+    "callerNumber": "1900 5454 13 (Giả)",
+    "callerAvatar": "🏦",
+    "duration": "01:50",
+    "description": "Cuộc gọi tự xưng phòng dịch vụ thẻ ngân hàng mời nâng hạn mức thẻ tín dụng lên 100 triệu, yêu cầu đọc mã OTP để hoàn tất hồ sơ.",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "ask_otp",
+        "hint": "Yêu cầu đọc mã OTP xác thực",
+        "explanation": "Ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP, mã Smart OTP hay mật khẩu dưới bất kỳ hình thức nào."
+      },
+      {
+        "id": "rf2",
+        "element": "card_cvv",
+        "hint": "Hỏi 3 số bảo mật CVV mặt sau thẻ",
+        "explanation": "Có số thẻ, ngày hết hạn và mã CVV, kẻ gian có thể thực hiện thanh toán trực tuyến mua hàng hóa/dịch vụ trên toàn thế giới mà không cần thẻ vật lý."
+      },
+      {
+        "id": "rf3",
+        "element": "fake_link",
+        "hint": "Gửi link lạ để 'xác thực hồ sơ'",
+        "explanation": "Link dẫn đến trang web giả mạo Internet Banking có giao diện giống thật 99% để thu thập thông tin đăng nhập."
+      }
+    ],
+    "totalFlags": 3,
+    "advice": "Chỉ nâng hạn mức tín dụng trực tiếp tại quầy giao dịch hoặc trên ứng dụng Mobile Banking chính thức của ngân hàng.",
+    "branchingTree": {
+      "startNode": "cbo_intro",
+      "totalOutcomes": 3,
+      "nodes": {
+        "cbo_intro": {
+          "id": "cbo_intro",
+          "speaker": "caller",
+          "speakerName": "Minh Thư - Vietcombank",
+          "text": "Dạ em chào anh/chị, em là Minh Thư từ trung tâm thẻ Vietcombank. Em thấy anh/chị có lịch sử chi tiêu rất uy tín nên ngân hàng đặc cách nâng hạn mức thẻ tín dụng từ 30 triệu lên 100 triệu đồng với ưu đãi miễn lãi 55 ngày!",
+          "nextNode": "cbo_c1"
+        },
+        "cbo_c1": {
+          "id": "cbo_c1",
+          "speaker": "user_choice",
+          "question": "Nhận được lời mời nâng hạn mức thẻ tín dụng lên 100 triệu qua điện thoại, bạn xử lý sao?",
+          "options": [
+            {
+              "id": "opt_agree",
+              "text": "💳 'Hay quá em! Thủ tục duyệt nâng hạn mức trực tuyến có nhanh không?'",
+              "type": "danger",
+              "nextNode": "cbo_ask_cvv"
+            },
+            {
+              "id": "opt_refuse_counter",
+              "text": "🏦 'Cảm ơn em, khi nào cần tôi sẽ trực tiếp ra quầy giao dịch Vietcombank đề nghị!'",
+              "type": "safe",
+              "nextNode": "cbo_outcome_safe"
+            },
+            {
+              "id": "opt_probe_staff",
+              "text": "🔍 'Cho tôi xin mã nhân viên và chi nhánh công tác để tôi gọi lại tổng đài kiểm tra!'",
+              "type": "probe",
+              "nextNode": "cbo_probe"
+            }
+          ]
+        },
+        "cbo_ask_cvv": {
+          "id": "cbo_ask_cvv",
+          "speaker": "caller",
+          "speakerName": "Minh Thư - Vietcombank",
+          "text": "Dạ thủ tục online duyệt trong 5 phút thôi ạ. Anh/chị đọc giúp em 16 số in trên thẻ, ngày hết hạn và 3 số bí mật CVV ở mặt sau thẻ. Lát nữa ngân hàng gửi mã xác thực OTP về máy, anh/chị đọc luôn để hoàn tất nhé!",
+          "nextNode": "cbo_c2"
+        },
+        "cbo_c2": {
+          "id": "cbo_c2",
+          "speaker": "user_choice",
+          "question": "Nhân viên yêu cầu bạn đọc mã bí mật CVV và mã OTP ngân hàng gửi về SMS. Bạn làm gì?",
+          "options": [
+            {
+              "id": "opt_give_cvv_otp",
+              "text": "🔓 Đọc đầy đủ số thẻ, mã CVV và mã OTP gửi về cho nhân viên để được duyệt",
+              "type": "danger",
+              "nextNode": "cbo_outcome_trap"
+            },
+            {
+              "id": "opt_stop_cvv",
+              "text": "🛑 Tỉnh táo: 'Ủa ngân hàng dặn không bao giờ chia sẻ CVV và OTP cho bất kỳ ai mà?' và cúp máy",
+              "type": "safe",
+              "nextNode": "cbo_outcome_probe"
+            }
+          ]
+        },
+        "cbo_probe": {
+          "id": "cbo_probe",
+          "speaker": "caller",
+          "speakerName": "Minh Thư - Vietcombank",
+          "text": "(Hơi bối rối): 'Dạ em ở khối khách hàng ưu tiên Hội sở chính. Chương trình ưu đãi này kết thúc trong sáng nay, nếu anh/chị không xác nhận ngay thì sẽ bị mất quyền lợi đó ạ!'",
+          "nextNode": "cbo_outcome_probe"
+        },
+        "cbo_outcome_trap": {
+          "id": "cbo_outcome_trap",
+          "speaker": "outcome",
+          "outcomeType": "TRAP",
+          "outcomeTitle": "💥 LỘ THÔNG TIN THẺ TÍN DỤNG - BỊ QUẸT HẾT HẠN MỨC 30 TRIỆU",
+          "badgeClass": "badge-danger",
+          "impact": "Tổn thất 30.000.000 VNĐ. Có số thẻ, ngày hết hạn, mã CVV và mã OTP, kẻ gian đã thanh toán mua tiền ảo / thẻ game trực tuyến. Bạn phải gánh khoản nợ 30 triệu đồng.",
+          "lessons": [
+            "Ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP hay mã bí mật CVV dưới bất kỳ hình thức nào.",
+            "3 số CVV ở mặt sau thẻ chính là 'chìa khóa két sắt' thẻ tín dụng - tuyệt đối phải dán che lại sau khi nhận thẻ."
+          ],
+          "actions": [
+            "NGAY LẬP TỨC gọi hotline ngân hàng yêu cầu khóa tài khoản và hủy giao dịch.",
+            "Yêu cầu ngân hàng khóa dịch vụ OTP SMS, chuyển sang Smart OTP hoặc xác thực sinh trắc.",
+            "Trình báo Công an, cung cấp số điện thoại lừa đảo và nội dung cuộc gọi.",
+            "Thay đổi mật khẩu tất cả dịch vụ ngân hàng điện tử."
+          ],
+          "urgentActions": [
+            "Lập tức liên hệ ngân hàng khóa thẻ và tài khoản trực tuyến.",
+            "Yêu cầu ngân hàng tra soát và hoàn trả các giao dịch bất thường.",
+            "Đổi mật khẩu Internet Banking, Mobile Banking và bật xác thực sinh trắc học."
+          ]
+        },
+        "cbo_outcome_probe": {
+          "id": "cbo_outcome_probe",
+          "speaker": "outcome",
+          "outcomeType": "PROBE",
+          "outcomeTitle": "🎯 NHẬN DIỆN CHIÊU TRÒ ĐÁNH CẮP THÔNG TIN THẺ TÍN DỤNG",
+          "badgeClass": "badge-cyan",
+          "impact": "Bảo vệ nguyên vẹn hạn mức thẻ tín dụng. Kẻ gian thúc giục thời hạn 'trong sáng nay' nhằm gây áp lực nhưng bất thành và phải tự cúp máy.",
+          "lessons": [
+            "Mọi đề nghị hỏi mã CVV hoặc mã OTP đều 100% là hành vi đánh cắp thông tin thẻ."
+          ],
+          "actions": [
+            "Ghi nhận và lưu lại thông tin đối tượng (số điện thoại, tài khoản) làm bằng chứng.",
+            "Phản ánh sự việc tới đầu số 156 (miễn cước) hoặc qua ứng dụng VNeID.",
+            "Cảnh báo người thân, bạn bè cùng cảnh giác với hình thức lừa đảo tương tự."
+          ],
+          "urgentActions": [
+            "Chặn số điện thoại của đối tượng.",
+            "Liên hệ tổng đài chính thức của ngân hàng để kiểm tra.",
+            "Phản ánh cuộc gọi mạo danh qua đầu số 156."
+          ]
+        },
+        "cbo_outcome_safe": {
+          "id": "cbo_outcome_safe",
+          "speaker": "outcome",
+          "outcomeType": "SAFE",
+          "outcomeTitle": "🛡️ NGUYÊN TẮC VÀNG BẢO MẬT - GIAO DỊCH TÍN DỤNG CHÍNH THỐNG",
+          "badgeClass": "badge-safe",
+          "impact": "An toàn 100%. Bạn chủ động kiểm tra trên ứng dụng VCB Digibank và chỉ nâng hạn mức qua kênh chính thức.",
+          "lessons": [
+            "Tuyệt đối không làm thủ tục nâng hạn mức thẻ qua các cuộc gọi tự xưng tổng đài ngân hàng."
+          ],
+          "actions": [
+            "Tiếp tục duy trì thói quen kiểm chứng đa kênh trước khi cung cấp thông tin.",
+            "Chia sẻ kinh nghiệm phòng tránh cho người thân, đặc biệt người cao tuổi.",
+            "Cập nhật kiến thức phòng chống lừa đảo qua các kênh chính thống của Bộ Công An."
+          ],
+          "urgentActions": [
+            "Liên hệ trực tiếp tổng đài ngân hàng trên website chính thức.",
+            "Cảnh báo người thân về chiêu trò giả danh nhân viên ngân hàng.",
+            "Phản ánh cuộc gọi lừa đảo qua đầu số 156."
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "phish-sms-1",
+    "type": "sms",
+    "category": "message",
+    "title": "Tin nhắn giả mạo Ngân hàng (SMS Brandname)",
+    "difficulty": "hard",
+    "from": "Vietcombank",
+    "avatar": "🏦",
+    "body": "Vietcombank tran trong thong bao: Tai khoan cua Quy khach vua duoc dang nhap tren thiet bi la tai Ha Noi luc 08:30. Neu khong phai ban, vui long truy cap ngay https://vietcombank-security.com de xac thuc va bao ve tai khoan.",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "url",
+        "hint": "Tên miền giả mạo (URL Spoofing)",
+        "explanation": "Tên miền chính thức của Vietcombank là vietcombank.com.vn. Tên miền vietcombank-security.com là giả mạo do kẻ lừa đảo đăng ký để đánh cắp tài khoản."
+      },
+      {
+        "id": "rf2",
+        "element": "urgency",
+        "hint": "Tạo tâm lý hoang mang, khẩn cấp",
+        "explanation": "Thông báo đăng nhập thiết bị lạ nhằm làm người dùng hoảng sợ, vội vàng bấm vào link mà không kiểm tra tên miền."
+      },
+      {
+        "id": "rf3",
+        "element": "sms_brandname",
+        "hint": "SMS Brandname bị làm giả qua trạm BTS ảo",
+        "explanation": "Kẻ lừa đảo dùng thiết bị phát sóng BTS giả để chèn tin nhắn vào đúng luồng tin nhắn thật của ngân hàng. Đừng tin tuyệt đối vào tên người gửi."
+      }
+    ],
+    "totalFlags": 3,
+    "phishSite": {
+      "url": "https://vietcombank-security.com/digibank/login",
+      "title": "Vietcombank Digibank - Xác thực an toàn tài khoản",
+      "brandName": "VCB Digibank",
+      "brandColor": "#0e7039",
+      "type": "banking_login",
+      "bannerWarning": "CẢNH BÁO: Phát hiện đăng nhập bất thường tại Hà Nội. Đăng nhập ngay để hủy liên kết thiết bị lạ.",
+      "fields": [
+        {
+          "id": "username",
+          "label": "Tên đăng nhập / Số điện thoại",
+          "type": "text",
+          "placeholder": "09xxxxxxxx hoặc tên đăng nhập"
+        },
+        {
+          "id": "password",
+          "label": "Mật khẩu VCB Digibank",
+          "type": "password",
+          "placeholder": "••••••••••••"
+        },
+        {
+          "id": "otp",
+          "label": "Mã xác thực Smart OTP / SMS OTP",
+          "type": "text",
+          "placeholder": "Nhập mã OTP 6 chữ số"
+        }
+      ],
+      "submitText": "Xác Thực & Giữ An Toàn Tài Khoản",
+      "consequence": {
+        "title": "💥 SẬP BẪY PHISHING: MẤT SẠCH TIỀN TRONG TÀI KHOẢN",
+        "badgeClass": "badge-danger",
+        "stolenData": "Tên đăng nhập: 0912***456 | Mật khẩu: •••••••• | Smart OTP: 829104",
+        "financialLoss": "-78.500.000 VNĐ",
+        "remainingBalance": "12.500 VNĐ",
+        "timeline": [
+          "00:00 - Nạn nhân điền tên đăng nhập, mật khẩu và Smart OTP vào trang web giả mạo.",
+          "00:02 - Máy chủ tin tặc tự động ghi nhận dữ liệu (credential harvesting) và gửi cảnh báo về bot Telegram của kẻ tấn công.",
+          "00:06 - Bot tự động dùng thông tin đăng nhập thẳng vào ứng dụng Vietcombank Digibank thật.",
+          "00:12 - Lệnh chuyển tiền nhanh 24/7 sang tài khoản ngân hàng ảo được thực hiện tức thì.",
+          "00:15 - Toàn bộ 78.500.000 VNĐ bị rút sạch, tài khoản của bạn chỉ còn 12.500 VNĐ."
+        ],
+        "explanation": "Trang web vietcombank-security.com là website lừa đảo (phishing) nhái giao diện Vietcombank. Ngay khi bấm 'Xác thực', toàn bộ tài khoản ngân hàng của bạn đã rơi vào tay tin tặc mà không thể hoàn tác!",
+        "urgentActions": [
+          "Gọi ngay hotline Vietcombank 1900 5454 13 để KHÓA KHẨN CẤP dịch vụ ngân hàng điện tử.",
+          "Đổi mật khẩu email, mạng xã hội nếu có dùng chung mật khẩu với tài khoản ngân hàng.",
+          "Trình báo cơ quan Công an và Cổng cảnh báo an toàn thông tin quốc gia (canhbao.khonggianmang.vn)."
+        ]
+      }
+    }
+  },
+  {
+    "id": "chat-telegram-job",
+    "type": "chat",
+    "category": "message",
+    "title": "Nhắn tin tuyển dụng CTV online Shopee/TikTok",
+    "difficulty": "medium",
+    "senderName": "Trang Tuyển Dụng Shopee Mall",
+    "senderAvatar": "🛍️",
+    "chatPlatform": "Telegram",
+    "chatMessages": [
+      {
+        "sender": "them",
+        "text": "Chào bạn! Mình là Trưởng phòng tuyển dụng của Shopee Mall. Hiện bên mình đang cần tuyển gấp 5 bạn CTV đánh giá sản phẩm tại nhà, thu nhập từ 500k - 1,5 triệu/ngày, chỉ cần có điện thoại kết nối internet.",
+        "time": "10:15"
+      },
+      {
+        "sender": "them",
+        "text": "Công việc rất đơn giản: Bạn chỉ cần đặt đơn hàng ảo trên link bên mình gửi để tăng lượt bán cho shop, sau đó hệ thống sẽ hoàn lại 100% tiền gốc + 15% hoa hồng ngay trong 5 phút!",
+        "time": "10:16"
+      },
+      {
+        "sender": "them",
+        "text": "Bạn có muốn làm thử đơn đầu tiên giá 200k để nhận ngay 230k về tài khoản không ạ?",
+        "time": "10:16"
+      }
+    ],
+    "interactiveOptions": [
+      {
+        "text": "Có ạ, hướng dẫn em cách nạp tiền đặt đơn để nhận hoa hồng với!",
+        "isTrap": true,
+        "botReply": "⚠️ BẠN ĐÃ RƠI VÀO BẪY! Đây là thủ đoạn lừa đảo CTV đặt đơn ảo kinh điển. Đơn đầu bạn sẽ nhận được tiền thật để tạo lòng tin, nhưng đến đơn vài chục triệu kẻ gian sẽ đóng băng tiền và biến mất!"
+      },
+      {
+        "text": "Shopee Mall chính thức không tuyển CTV qua Telegram kiểu này đâu nhé, lừa đảo đấy à?",
+        "isTrap": false,
+        "botReply": "✅ PHẢN ỨNG XUẤT SẮC! Đại diện Shopee khẳng định KHÔNG BAO GIỜ tuyển CTV đặt đơn ảo nhận hoa hồng qua Telegram hay mạng xã hội."
+      }
+    ],
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "job_offer",
+        "hint": "'Việc nhẹ lương cao' phi thực tế",
+        "explanation": "500k - 1,5 triệu/ngày chỉ để bấm like hoặc đặt đơn hàng là mức thu nhập phi lý, dấu hiệu hàng đầu của lừa đảo tuyển dụng."
+      },
+      {
+        "id": "rf2",
+        "element": "platform",
+        "hint": "Tuyển dụng qua Telegram/Zalo lạ",
+        "explanation": "Các tập đoàn TMĐT lớn đều tuyển dụng qua kênh chính thức (careers page, LinkedIn), không bao giờ nhắn tin riêng qua Telegram mời làm CTV."
+      },
+      {
+        "id": "rf3",
+        "element": "advance_payment",
+        "hint": "Bắt nạp tiền trước để nhận hoa hồng",
+        "explanation": "Bất kỳ công việc nào yêu cầu ứng viên phải 'bỏ tiền túi nạp tiền trước' đều là lừa đảo tài chính."
+      }
+    ],
+    "totalFlags": 3
+  },
+  {
+    "id": "phish-sms-2",
+    "type": "sms",
+    "category": "message",
+    "title": "Tin nhắn giả mạo Điện lực EVN thông báo nợ tiền điện",
+    "difficulty": "medium",
+    "from": "DienLucEVN",
+    "avatar": "⚡",
+    "body": "EVN: Ma KH 02819234 con no 2.850.000d tien dien thang 08. Dien luc se tam ngung cap dien sau 24h neu chua thanh toan. Xem chi tiet va thanh toan tai: http://evn-hoadondientu.com",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "url",
+        "hint": "Website giả mạo EVN",
+        "explanation": "Website chính thức của EVN là evn.com.vn hoặc cskh.evnspc.vn / cskh.evnhcmc.vn. Tên miền evn-hoadondientu.com là trang web lừa đảo chiếm đoạt tài khoản thanh toán."
+      },
+      {
+        "id": "rf2",
+        "element": "threat",
+        "hint": "Đe dọa cắt điện sau 24h",
+        "explanation": "EVN có quy trình thông báo nhiều lần trước khi ngừng cung cấp điện, không gửi tin nhắn dọa cắt điện đột ngột kèm đường link thanh toán lạ."
+      }
+    ],
+    "totalFlags": 2,
+    "phishSite": {
+      "url": "http://evn-hoadondientu.com/tra-cuu-thanh-toan",
+      "title": "Cổng Thông Tin & Thanh Toán Tiền Điện - EVN",
+      "brandName": "Tập Đoàn Điện Lực Việt Nam EVN",
+      "brandColor": "#0284c7",
+      "type": "bill_payment",
+      "bannerWarning": "CẢNH BÁO: Hóa đơn kỳ 08/2024 quá hạn 2.850.000 VNĐ. Lệnh cắt điện sẽ tự động kích hoạt sau 24h.",
+      "fields": [
+        {
+          "id": "card_num",
+          "label": "Số thẻ ATM / Visa / Mastercard",
+          "type": "text",
+          "placeholder": "9704 xxxx xxxx xxxx"
+        },
+        {
+          "id": "card_holder",
+          "label": "Họ và tên in trên thẻ",
+          "type": "text",
+          "placeholder": "NGUYEN VAN A"
+        },
+        {
+          "id": "card_exp",
+          "label": "Ngày hết hạn (MM/YY)",
+          "type": "text",
+          "placeholder": "08/28"
+        },
+        {
+          "id": "card_cvv",
+          "label": "Mã bảo mật CVV (mặt sau thẻ)",
+          "type": "password",
+          "placeholder": "•••"
+        },
+        {
+          "id": "otp",
+          "label": "Mã xác thực OTP ngân hàng gửi về SMS",
+          "type": "text",
+          "placeholder": "Nhập mã OTP 6 số"
+        }
+      ],
+      "submitText": "Thanh Toán Ngay 2.850.000 VNĐ",
+      "consequence": {
+        "title": "💥 SẬP BẪY CỔNG EVN GIẢ MẠO: THẺ BỊ QUẸT SẠCH HẠN MỨC",
+        "badgeClass": "badge-danger",
+        "stolenData": "Số thẻ ATM/Visa + Họ tên + Mã CVV + OTP xác thực giao dịch",
+        "financialLoss": "-45.000.000 VNĐ",
+        "remainingBalance": "0 VNĐ (Chạm kịch trần hạn mức thẻ tín dụng)",
+        "timeline": [
+          "00:00 - Nạn nhân nhập thông tin thẻ quốc tế và mã bảo mật bí mật CVV.",
+          "00:03 - Máy chủ giả mạo gửi lệnh quẹt thẻ thanh toán trên cổng thanh toán quốc tế nước ngoài.",
+          "00:07 - Ngân hàng gửi mã OTP về máy nạn nhân, nạn nhân tưởng là OTP nộp tiền điện nên điền ngay vào web.",
+          "00:10 - Giao dịch quẹt thẻ 45 triệu mua thiết bị điện tử hoặc thẻ game thành công.",
+          "00:15 - SMS báo trừ tiền 45.000.000 VNĐ ập về điện thoại nạn nhân."
+        ],
+        "explanation": "EVN KHÔNG BAO GIỜ yêu cầu nhập mã CVV hoặc mã OTP ngân hàng trên các trang web lạ. Website evn-hoadondientu.com là cổng giả mạo nhằm chiếm đoạt thẻ tín dụng và tài khoản ngân hàng.",
+        "urgentActions": [
+          "Lập tức mở ứng dụng ngân hàng và bấm 'KHÓA THẺ TÍN DỤNG / THẺ ATM' khẩn cấp.",
+          "Gọi điện hotline ngân hàng phát hành thẻ đề nghị tra soát khiếu nại giao dịch gian lận.",
+          "Không tiếp tục cung cấp bất kỳ mã OTP nào nhận được qua điện thoại."
+        ]
+      }
+    }
+  },
+  {
+    "id": "chat-zalo-lottery",
+    "type": "chat",
+    "category": "message",
+    "title": "Nhắn tin Zalo thông báo trúng thưởng xe máy SH",
+    "difficulty": "easy",
+    "senderName": "Ban Tổ Chức Tri Ân Khách Hàng",
+    "senderAvatar": "🎉",
+    "chatPlatform": "Zalo",
+    "chatMessages": [
+      {
+        "sender": "them",
+        "text": "Chúc mừng tài khoản Zalo của bạn đã may mắn trúng GIẢI NHẤT chương trình 'Vòng Quay Tri Ân Khách Hàng 2024' gồm 01 Xe máy Honda SH 150i + 01 Phiếu quà tặng trị giá 100.000.000 VNĐ!",
+        "time": "14:20"
+      },
+      {
+        "sender": "them",
+        "text": "Để hoàn tất hồ sơ nhận giải tại nhà, bạn vui lòng chuyển khoản trước 3.500.000 VNĐ tiền lệ phí làm thủ tục trước bạ và hồ sơ vận chuyển xe nhé.",
+        "time": "14:21"
+      }
+    ],
+    "interactiveOptions": [
+      {
+        "text": "Mừng quá! Em chuyển khoản 3.500.000đ vào đâu để nhận xe SH ạ?",
+        "isTrap": true,
+        "botReply": "⚠️ BẠN ĐÃ MẤT 3.500.000 VNĐ! Không có chiếc xe SH nào cả. Kẻ gian sau khi nhận tiền sẽ tiếp tục đòi thêm 'phí biển số', 'thuế thu nhập' rồi biến mất!"
+      },
+      {
+        "text": "Tôi không tham gia chương trình nào cả. Nếu trúng thật thì trừ tiền phí vào giải thưởng giúp tôi nhé!",
+        "isTrap": false,
+        "botReply": "✅ QUÁ CHUẨN! Chiêu 'trừ phí vào phần thưởng' khiến 100% kẻ lừa đảo trúng thưởng phải 'câm nín' và tự động rút lui."
+      }
+    ],
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "unsolicited_prize",
+        "hint": "Trúng thưởng dù không tham gia",
+        "explanation": "Không tham gia bất kỳ cuộc thi hay bốc thăm nào nhưng lại nhận thông báo trúng giải đặc biệt là dấu hiệu lừa đảo kinh điển."
+      },
+      {
+        "id": "rf2",
+        "element": "advance_fee",
+        "hint": "Yêu cầu nộp phí trước khi nhận giải",
+        "explanation": "Các chương trình khuyến mại hợp pháp có đăng ký với Bộ Công Thương không bao giờ yêu cầu khách hàng chuyển khoản tiền phí qua tài khoản cá nhân để nhận giải."
+      }
+    ],
+    "totalFlags": 2
+  },
+  {
+    "id": "phish-email-1",
+    "type": "email",
+    "category": "email",
+    "title": "Email giả mạo Ngân hàng yêu cầu xác thực tài khoản",
+    "difficulty": "medium",
+    "from": "security@vietcombank-alert.com",
+    "fromDisplay": "Vietcombank Security Team",
+    "to": "khachhang@gmail.com",
+    "subject": "CẢNH BÁO KHẨN CẤP: Tài khoản của bạn bị tạm khóa vì lý do bảo mật",
+    "date": "15/09/2024 09:15",
+    "body": "<p>Kính gửi Quý khách hàng,</p><p>Hệ thống bảo mật của chúng tôi phát hiện <strong>hoạt động đáng ngờ</strong> trên tài khoản ngân hàng trực tuyến của bạn vào lúc 08:30 sáng nay.</p><p>Để bảo vệ tài khoản, chúng tôi đã <strong>tạm thời khóa</strong> quyền truy cập của bạn.</p><p>Vui lòng xác thực danh tính ngay lập tức để mở khóa tài khoản:</p><p class='cta-button'><a href='#'>🔒 XÁC THỰC TÀI KHOẢN NGAY</a></p><p><em>Lưu ý: Nếu không xác thực trong vòng 24 giờ, tài khoản của bạn sẽ bị đóng vĩnh viễn.</em></p><p>Trân trọng,<br>Bộ phận An ninh Thông tin - Ngân hàng TMCP Ngoại thương Việt Nam</p>",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "from",
+        "hint": "Địa chỉ email người gửi giả mạo",
+        "explanation": "Email gửi từ security@vietcombank-alert.com – tên miền vietcombank-alert.com KHÔNG phải của Vietcombank. Tên miền chính thức là vietcombank.com.vn."
+      },
+      {
+        "id": "rf2",
+        "element": "urgency",
+        "hint": "Tạo áp lực thời gian gấp gáp",
+        "explanation": "'CẢNH BÁO KHẨN CẤP', 'khóa vĩnh viễn trong 24 giờ' – kẻ tấn công tạo cảm giác hoảng loạn để nạn nhân hành động theo cảm xúc mà không suy nghĩ kỹ."
+      },
+      {
+        "id": "rf3",
+        "element": "link",
+        "hint": "Nút bấm liên kết đáng ngờ",
+        "explanation": "Nút 'XÁC THỰC TÀI KHOẢN NGAY' dẫn tới trang web giả mạo được thiết kế giống hệt trang đăng nhập của Vietcombank nhằm đánh cắp tên đăng nhập và mật khẩu."
+      },
+      {
+        "id": "rf4",
+        "element": "greeting",
+        "hint": "Lời chào chung chung",
+        "explanation": "Email ngân hàng thật thường gọi đúng họ tên của bạn (do đã có trong cơ sở dữ liệu), không dùng 'Kính gửi Quý khách hàng' chung chung."
+      }
+    ],
+    "totalFlags": 4,
+    "phishSite": {
+      "url": "https://vietcombank-alert.com/xac-thuc-danh-tinh",
+      "title": "Trung Tâm Bảo Mật Vietcombank - Kích Hoạt Khẩn Cấp",
+      "brandName": "Vietcombank Security Portal",
+      "brandColor": "#0e7039",
+      "type": "banking_login",
+      "bannerWarning": "CẢNH BÁO KHẨN CẤP: Tài khoản của bạn sẽ bị vô hiệu hóa trong 24 giờ nếu không xác thực.",
+      "fields": [
+        {
+          "id": "username",
+          "label": "Tên đăng nhập VCB Digibank",
+          "type": "text",
+          "placeholder": "Nhập tên đăng nhập / Số điện thoại"
+        },
+        {
+          "id": "password",
+          "label": "Mật khẩu hiện tại",
+          "type": "password",
+          "placeholder": "••••••••••••"
+        },
+        {
+          "id": "otp",
+          "label": "Mã xác thực OTP gửi về SMS",
+          "type": "text",
+          "placeholder": "Mã 6 chữ số"
+        }
+      ],
+      "submitText": "Mở Khóa Tài Khoản Ngay",
+      "consequence": {
+        "title": "💥 SẬP BẪY PHISHING EMAIL: TÀI KHOẢN BỊ CHIẾM ĐOẠT TOÀN DIỆN",
+        "badgeClass": "badge-danger",
+        "stolenData": "Tên đăng nhập, Mật khẩu VCB Digibank & Mã OTP xác thực phiên",
+        "financialLoss": "-65.000.000 VNĐ",
+        "remainingBalance": "0 VNĐ",
+        "timeline": [
+          "00:00 - Nhấp vào đường link giả mạo trong email mang tên miền vietcombank-alert.com.",
+          "00:02 - Cung cấp tên đăng nhập, mật khẩu và mã OTP vào biểu mẫu phishing.",
+          "00:05 - Kẻ gian đăng nhập vào phiên web chính thức, kích hoạt chuyển đổi thiết bị tin cậy sang máy của tin tặc.",
+          "00:11 - Kẻ gian đổi số điện thoại nhận OTP hoặc rút cạn toàn bộ tiền tiết kiệm gửi trực tuyến."
+        ],
+        "explanation": "Email giả mạo Vietcombank Security Team lợi dụng tâm lý lo sợ bị khóa tài khoản để dẫn dụ nạn nhân tự tay nộp mật khẩu và OTP cho tin tặc.",
+        "urgentActions": [
+          "Khóa tài khoản ngân hàng lập tức qua ứng dụng hoặc gọi tổng đài Vietcombank 1900 5454 13.",
+          "Đổi mật khẩu tài khoản ngân hàng và các tài khoản quan trọng khác ngay lập tức."
+        ]
+      }
+    }
+  },
+  {
+    "id": "phish-sms-3",
+    "type": "sms",
+    "category": "message",
+    "title": "Tin nhắn giả mạo trúng thưởng từ tổng đài",
+    "difficulty": "easy",
+    "from": "TONG-DAI",
+    "avatar": "🎁",
+    "body": "Chuc mung thue bao 09xxxx dat giai DAC BIET chuong trinh tri an khach hang! Phan thuong: 50.000.000 VND tien mat. Truy cap ngay http://tri-an-khach-hang-2024.top de nhan thuong truoc 23:59 hom nay!",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "url",
+        "hint": "Tên miền đáng ngờ (.top)",
+        "explanation": "Tên miền tri-an-khach-hang-2024.top – đuôi .top thường được kẻ lừa đảo sử dụng vì chi phí đăng ký rẻ, dễ tạo hàng loạt."
+      },
+      {
+        "id": "rf2",
+        "element": "urgency",
+        "hint": "Tạo áp lực thời gian",
+        "explanation": "'Trước 23:59 hôm nay' – tạo cảm giác gấp gáp để nạn nhân hành động mà không kịp suy nghĩ và xác minh."
+      },
+      {
+        "id": "rf3",
+        "element": "prize",
+        "hint": "Giải thưởng quá hấp dẫn",
+        "explanation": "50 triệu VND trúng thưởng bất ngờ – phần thưởng phi thực tế. Ngân hàng không tổ chức trao giải qua SMS link."
+      },
+      {
+        "id": "rf4",
+        "element": "format",
+        "hint": "Định dạng tin nhắn",
+        "explanation": "SMS Brandname thật từ ngân hàng thường viết có dấu tiếng Việt chuẩn, không dùng link rút gọn hay link tên miền lạ."
+      }
+    ],
+    "totalFlags": 4,
+    "phishSite": {
+      "url": "http://tri-an-khach-hang-2024.top/nhan-thuong-50trieu",
+      "title": "Cổng Tiếp Nhận Giải Thưởng Tri Ân 2024",
+      "brandName": "Ban Tổ Chức Tri Ân Viễn Thông",
+      "brandColor": "#ea580c",
+      "type": "lottery_reward",
+      "bannerWarning": "GIẢI ĐẶC BIỆT 50.000.000 VNĐ TIỀN MẶT - Hạn chót nhận thưởng 23:59 hôm nay!",
+      "fields": [
+        {
+          "id": "fullname",
+          "label": "Họ và tên người trúng giải",
+          "type": "text",
+          "placeholder": "Nguyễn Văn A"
+        },
+        {
+          "id": "bank_num",
+          "label": "Số tài khoản ngân hàng nhận tiền",
+          "type": "text",
+          "placeholder": "STK ngân hàng của bạn"
+        },
+        {
+          "id": "bank_name",
+          "label": "Ngân hàng thụ hưởng",
+          "type": "text",
+          "placeholder": "Vietcombank, MB, Techcombank..."
+        },
+        {
+          "id": "fee_pin",
+          "label": "Mã thẻ cào 200.000đ đóng lệ phí hồ sơ trả thưởng",
+          "type": "text",
+          "placeholder": "Nhập mã số thẻ cào Viettel/Mobi"
+        }
+      ],
+      "submitText": "Nhận Thưởng 50.000.000 VNĐ Vào Tài Khoản",
+      "consequence": {
+        "title": "💥 SẬP BẪY TRÚNG THƯỞNG ẢO: MẤT TIỀN THẬT - GIẢI THƯỞNG RÁC",
+        "badgeClass": "badge-danger",
+        "stolenData": "Mã thẻ cào 200k + Dữ liệu tài khoản ngân hàng cá nhân",
+        "financialLoss": "-200.000 VNĐ (và đe dọa nộp thêm hàng triệu)",
+        "remainingBalance": "Không nhận được bất kỳ đồng nào từ 50 triệu ảo",
+        "timeline": [
+          "00:00 - Nạn nhân mừng rỡ mua thẻ cào 200k nạp vào web để làm 'hồ sơ nhận thưởng'.",
+          "00:01 - Kẻ gian lập tức quy đổi thẻ cào sang tiền mặt trên sàn đổi thẻ.",
+          "00:05 - Kẻ gian gọi điện thông báo: 'Đã nhận hồ sơ, nhưng để giải ngân 50 triệu bạn phải nộp 10% thuế TNCN là 5 triệu đồng'.",
+          "00:10 - Nạn nhân nếu không tỉnh táo sẽ tiếp tục chuyển thêm 5 triệu, 10 triệu cho đến khi khánh kiệt."
+        ],
+        "explanation": "Không bao giờ có chuyện trúng thưởng tiền tỷ/tiền chục triệu ngẫu nhiên qua SMS mà không cần đăng ký tham gia. Yêu cầu nạp thẻ hay đóng phí trước là dấu hiệu lừa đảo 100%.",
+        "urgentActions": [
+          "Dừng ngay việc nạp thêm tiền hoặc mua thêm thẻ cào.",
+          "Chặn số điện thoại và báo cáo tin nhắn rác tới tổng đài 156."
+        ]
+      }
+    }
+  },
+  {
+    "id": "phish-email-2",
+    "type": "email",
+    "category": "email",
+    "title": "Email giả mạo VNeID yêu cầu cập nhật CCCD",
+    "difficulty": "medium",
+    "from": "support@vneid-dichvucong.org",
+    "fromDisplay": "Hệ thống VNeID - Bộ Công An",
+    "to": "nguoidung@gmail.com",
+    "subject": "Thông báo: Cập nhật thông tin CCCD gắn chip trên VNeID trước 30/09",
+    "date": "12/09/2024 14:20",
+    "body": "<p>Kính gửi công dân,</p><p>Theo Nghị định 13/2023/NĐ-CP, tất cả công dân cần <strong>cập nhật thông tin CCCD gắn chip</strong> trên hệ thống VNeID trước ngày 30/09/2024.</p><p>Quý công dân vui lòng tải và cài đặt ứng dụng VNeID phiên bản mới nhất tại đường link bên dưới:</p><p class='cta-button'><a href='#'>📱 TẢI VNEID PHIÊN BẢN MỚI</a></p><p>Sau khi cài đặt, đăng nhập và cung cấp:</p><ul><li>Số CCCD 12 số</li><li>Ảnh chụp 2 mặt CCCD</li><li>Ảnh chân dung selfie</li><li>Thông tin tài khoản ngân hàng liên kết</li></ul><p>Công dân không thực hiện trước thời hạn sẽ bị <strong>hạn chế sử dụng dịch vụ công trực tuyến</strong>.</p><p>Trân trọng,<br>Trung tâm Dữ liệu Quốc gia về Dân cư<br>Bộ Công An</p>",
+    "redFlags": [
+      {
+        "id": "rf1",
+        "element": "from",
+        "hint": "Tên miền email giả mạo",
+        "explanation": "Email từ @vneid-dichvucong.org – KHÔNG phải hệ thống chính thức. VNeID chính thức dùng tên miền gov.vn. Tên miền .org ai cũng có thể đăng ký."
+      },
+      {
+        "id": "rf2",
+        "element": "download",
+        "hint": "Link tải app bên ngoài",
+        "explanation": "Yêu cầu tải VNeID qua link trong email thay vì App Store/Google Play chính thức. Đây có thể là malware/spyware giả mạo VNeID."
+      },
+      {
+        "id": "rf3",
+        "element": "data",
+        "hint": "Thu thập thông tin nhạy cảm",
+        "explanation": "Yêu cầu ảnh 2 mặt CCCD + selfie + tài khoản ngân hàng – đủ thông tin để giả mạo danh tính và chiếm đoạt tài khoản ngân hàng."
+      },
+      {
+        "id": "rf4",
+        "element": "deadline",
+        "hint": "Hạn chót giả tạo",
+        "explanation": "Viện dẫn Nghị định và tạo deadline cụ thể để tạo áp lực. Các cơ quan nhà nước không yêu cầu cập nhật thông tin qua email kèm link."
+      }
+    ],
+    "totalFlags": 4,
+    "phishSite": {
+      "url": "http://vneid-dichvucong.org/cap-nhat-vneid-v2.1.apk",
+      "title": "Cổng Dịch Vụ Công Bộ Công An - Cài Đặt VNeID",
+      "brandName": "Cổng Dịch Vụ Công Quốc Gia - VNeID",
+      "brandColor": "#b91c1c",
+      "type": "malware_apk",
+      "bannerWarning": "YÊU CẦU BẮT BUỘC: Tải tệp tin Android VNeID_v2.1.6.apk và cấp toàn bộ Quyền Trợ Năng (Accessibility Service) để đồng bộ CCCD.",
+      "fields": [
+        {
+          "id": "cccd_num",
+          "label": "Số định danh cá nhân / CCCD (12 số)",
+          "type": "text",
+          "placeholder": "001099xxxxxx"
+        },
+        {
+          "id": "phone_num",
+          "label": "Số điện thoại đăng ký chính chủ",
+          "type": "text",
+          "placeholder": "09xxxxxxxx"
+        }
+      ],
+      "submitText": "Tải VNeID_v2.1.6.apk Về Máy & Cài Đặt",
+      "consequence": {
+        "title": "💥 SẬP BẪY MÃ ĐỘC VNEID GIẢ MẠO: ĐIỆN THOẠI BỊ CHIẾM QUYỀN ĐIỀU KHIỂN TỪ XA",
+        "badgeClass": "badge-danger",
+        "stolenData": "Toàn quyền Trợ năng (Accessibility) + Đọc SMS OTP + Chụp màn hình thao tác ngân hàng",
+        "financialLoss": "-120.000.000 VNĐ (Mất sạch tiền trong 3 ứng dụng ngân hàng)",
+        "remainingBalance": "0 VNĐ (Kể cả tiền trong tài khoản thấu chi)",
+        "timeline": [
+          "00:00 - Tải tệp .apk cài đặt vào điện thoại Android và cho phép 'Cài đặt từ nguồn không xác định'.",
+          "00:02 - Ứng dụng giả mạo yêu cầu cấp quyền 'Trợ năng' (Accessibility Service) và quyền 'Đọc tin nhắn SMS'.",
+          "00:05 - Khi cấp quyền xong, biểu tượng ứng dụng tự động biến mất khỏi màn hình chính để chạy ngầm.",
+          "02:00 (Nửa đêm khi bạn đang ngủ) - Kẻ gian từ xa tự động bật app ngân hàng, chụp lén màn hình, đọc mã OTP ngầm và chuyển toàn bộ 120.000.000 VNĐ đi mà màn hình điện thoại không hề sáng!"
+        ],
+        "explanation": "Bộ Công an và cơ quan nhà nước CHỈ phát hành ứng dụng qua kho ứng dụng chính thức Google Play và App Store. KHÔNG BAO GIỜ yêu cầu công dân tải tệp tin APK qua đường link ngoài!",
+        "urgentActions": [
+          "Bật ngay CHẾ ĐỘ MÁY BAY (Airplane Mode) hoặc tắt nguồn điện thoại lập tức để ngắt kết nối điều khiển từ xa.",
+          "Dùng một thiết bị khác gọi điện hotline ngân hàng khóa toàn bộ tài khoản và thẻ.",
+          "Khôi phục cài đặt gốc (Factory Reset) điện thoại để xóa sạch hoàn toàn mã độc gián điệp."
+        ]
+      }
+    }
+  }
+]
