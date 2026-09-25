@@ -4,6 +4,7 @@
  */
 
 import './css/style.css';
+import { inject, pageview } from '@vercel/analytics';
 import { scanURL } from './js/scanner.js';
 import { analyzePassword } from './js/password.js';
 import { sound } from './js/audio.js';
@@ -12,6 +13,9 @@ import campaignsData from './data/campaigns.json';
 import scamTypesData from './data/scamTypes.json';
 import questionsData from './data/questions.json';
 import simulationsData from './data/simulations.json';
+
+// Khởi tạo hệ thống thống kê lượt sử dụng Vercel Analytics
+inject();
 
 // =============================================
 // APP STATE
@@ -57,6 +61,9 @@ const state = {
 function navigateTo(page) {
   state.currentPage = page;
   state.mobileMenuOpen = false;
+
+  // Ghi nhận lượt xem trang (pageview) trên Vercel Analytics khi chuyển tab
+  pageview({ route: `/${page === 'home' ? '' : page}` });
 
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   const target = document.getElementById(`page-${page}`);
