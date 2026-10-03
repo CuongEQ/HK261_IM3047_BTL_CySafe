@@ -4,7 +4,7 @@
  */
 
 import './css/style.css';
-import { inject, pageview } from '@vercel/analytics';
+import { inject, pageview, track } from '@vercel/analytics';
 import { scanURL } from './js/scanner.js';
 import { analyzePassword } from './js/password.js';
 import { sound } from './js/audio.js';
@@ -3618,6 +3618,33 @@ function initApp() {
         </div>
       </div>
     </footer>
+
+    <!-- Floating Feedback & Rating Button -->
+    <a href="https://forms.gle/yzQbvsztLVe2Z4gw8"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="floating-feedback-btn"
+       id="floating-feedback-btn"
+       title="Đánh giá & Đóng góp ý kiến cho CySafe Vietnam"
+       aria-label="Đánh giá và đóng góp ý kiến">
+      <div class="feedback-btn-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span class="feedback-pulse-dot"></span>
+      </div>
+      <div class="feedback-btn-text">
+        <span class="feedback-btn-main">
+          Đánh giá & Góp ý
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </span>
+        <span class="feedback-btn-sub">Khảo sát người dùng</span>
+      </div>
+    </a>
   `;
 
   // Bind navigation
@@ -3626,6 +3653,11 @@ function initApp() {
       e.preventDefault();
       navigateTo(el.dataset.page);
     });
+  });
+
+  // Track feedback button click
+  document.getElementById('floating-feedback-btn')?.addEventListener('click', () => {
+    track('feedback_form_opened', { destination: 'google_form' });
   });
 
   // Mobile toggle

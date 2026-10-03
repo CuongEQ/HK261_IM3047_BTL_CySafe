@@ -4216,3 +4216,127 @@ h3 { font-size: clamp(1.15rem, 2vw, 1.55rem); }
   .hero-stats { grid-template-columns: 1fr; gap: var(--space-lg); }
   .stat-number { font-size: 1.5rem; }
 }
+
+/* =============================================
+   FLOATING FEEDBACK & RATING BUTTON (NÚT PHẢN HỒI)
+   ============================================= */
+.floating-feedback-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 995;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px 10px 12px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(8, 14, 28, 0.98) 100%);
+  border: 1px solid rgba(0, 242, 254, 0.4);
+  border-radius: 9999px;
+  color: #f8fafc;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.75), 0 0 20px rgba(0, 242, 254, 0.22);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.floating-feedback-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  color: #ffffff;
+  border-color: rgba(0, 242, 254, 0.85);
+  box-shadow: 0 14px 32px -4px rgba(0, 0, 0, 0.85), 0 0 32px rgba(0, 242, 254, 0.45);
+}
+
+.floating-feedback-btn:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.feedback-btn-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.22) 0%, rgba(37, 99, 235, 0.3) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+  position: relative;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 242, 254, 0.35);
+}
+
+.feedback-btn-icon-wrap svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.25s ease;
+}
+
+.floating-feedback-btn:hover .feedback-btn-icon-wrap svg {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+.feedback-pulse-dot {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: feedbackPulse 2s infinite ease-in-out;
+}
+
+@keyframes feedbackPulse {
+  0% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.feedback-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.feedback-btn-main {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.feedback-btn-sub {
+  font-size: 0.72rem;
+  color: var(--cyan);
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .floating-feedback-btn {
+    bottom: 18px;
+    right: 14px;
+    padding: 8px 12px 8px 8px;
+    gap: 8px;
+  }
+  .feedback-btn-icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+  .feedback-btn-icon-wrap svg {
+    width: 16px;
+    height: 16px;
+  }
+  .feedback-btn-sub {
+    display: none;
+  }
+}
